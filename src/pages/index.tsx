@@ -1,17 +1,5 @@
 import React from 'react';
-import {
-  Table,
-  Input,
-  Form,
-  Select,
-  ConfigProvider,
-  Row,
-  Col,
-  Checkbox,
-  Typography,
-  Divider,
-} from 'antd';
-import styles from './index.css';
+import { Table, Input, Form, Select, ConfigProvider, Checkbox, Typography, Divider } from 'antd';
 import ChangeLog from './components/ChangeLog';
 
 export default function() {
@@ -119,7 +107,6 @@ export default function() {
 
   React.useEffect(() => {
     const changelog = (window as any).changelog || [];
-    console.log(changelog);
     setDataSource(changelog);
 
     const formValues: Record<string, any> = {};

@@ -45,9 +45,9 @@ function getIcon(type: string) {
     case 'perf':
       return '⚡️';
     case 'rtl':
-      return '⬅️';
-    case 'TypeScript':
-      return '🤖';
+      return '💄';
+    case 'ts':
+      return null;
 
     default:
       return '🚫';
@@ -55,7 +55,9 @@ function getIcon(type: string) {
 }
 
 export default function ChangeLog({ hashList, formValues, lang }: ChangeLogProps) {
-  let content = '';
+  const lines: string[] = [];
+  const rtlLines: string[] = [];
+  const tsLines: string[] = [];
 
   hashList.forEach(hash => {
     const entity = formValues[hash];
@@ -64,8 +66,11 @@ export default function ChangeLog({ hashList, formValues, lang }: ChangeLogProps
       return;
     }
 
+    let content = '';
     if (entity.use) {
-      content += `- ${getIcon(entity.type)} ${entity[lang]}`;
+      const icon = getIcon(entity.type);
+      const iconStr = icon ? `${icon} ` : '';
+      content += `- ${iconStr}${entity[lang].trim()}`;
 
       if (lang === 'english') {
         content += ' ';
@@ -82,7 +87,16 @@ export default function ChangeLog({ hashList, formValues, lang }: ChangeLogProps
         content += ` [@${entity.author}](https://github.com/${entity.author})`;
       }
 
-      content += '\n';
+      switch (entity.type) {
+        case 'rtl':
+          rtlLines.push(content);
+          break;
+        case 'ts':
+          tsLines.push(content);
+          break;
+        default:
+          lines.push(content);
+      }
     }
   });
 
@@ -97,7 +111,9 @@ export default function ChangeLog({ hashList, formValues, lang }: ChangeLogProps
         whiteSpace: 'pre-wrap',
       }}
     >
-      {content}
+      {lines.join('\n')}
+      {rtlLines.length ? `\n- RTL\n${rtlLines.map(str => `  ${str}`).join('\n')}` : null}
+      {tsLines.length ? `\n- TypeScript\n${tsLines.map(str => `  ${str}`).join('\n')}` : null}
     </pre>
   );
 }
