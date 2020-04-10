@@ -12,7 +12,7 @@ const config =  defineConfig({
     }
   ],
   antd: {},
-  title: 'antd-changelog',
+  title: 'antd changelog',
 })
 
 export default config;

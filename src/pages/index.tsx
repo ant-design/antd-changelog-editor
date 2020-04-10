@@ -156,7 +156,7 @@ export default function() {
 
           <Form.Item shouldUpdate>
             {form => {
-              const formValues = form.getFieldsValue();
+              const formValues = form.getFieldsValue(true);
 
               const hashList = dataSource.map((item: { hash: string }) => item.hash);
 
