@@ -14,7 +14,15 @@ export interface ChangeLogProps {
   lang: 'chinese' | 'english';
   formValues: Record<
     string,
-    { use: boolean; chinese: string; english: string; type: string; pr: string; author: string }
+    {
+      use: boolean;
+      chinese: string;
+      english: string;
+      type: string;
+      pr: string;
+      author: string;
+      component: string;
+    }
   >;
 }
 
@@ -58,6 +66,7 @@ export default function ChangeLog({ hashList, formValues, lang }: ChangeLogProps
   const lines: string[] = [];
   const rtlLines: string[] = [];
   const tsLines: string[] = [];
+  const componentLines: Record<string, string[]> = {};
 
   hashList.forEach(hash => {
     const entity = formValues[hash];
@@ -95,10 +104,25 @@ export default function ChangeLog({ hashList, formValues, lang }: ChangeLogProps
           tsLines.push(content);
           break;
         default:
-          lines.push(content);
+          if (entity.component) {
+            componentLines[entity.component] = componentLines[entity.component] || [];
+            componentLines[entity.component].push(content);
+          } else {
+            lines.push(content);
+          }
       }
     }
   });
+
+  const componentContext = Object.keys(componentLines)
+    .map(component => {
+      const cLines = componentLines[component];
+      if (cLines.length > 1) {
+        return `- ${component}\n${cLines.map(str => `  ${str}`).join('\n')}`;
+      }
+      return cLines[0];
+    })
+    .join('\n');
 
   return (
     <pre
@@ -111,6 +135,7 @@ export default function ChangeLog({ hashList, formValues, lang }: ChangeLogProps
         whiteSpace: 'pre-wrap',
       }}
     >
+      {componentContext ? `${componentContext}\n` : null}
       {lines.join('\n')}
       {rtlLines.length ? `\n- RTL\n${rtlLines.map(str => `  ${str}`).join('\n')}` : null}
       {tsLines.length ? `\n- TypeScript\n${tsLines.map(str => `  ${str}`).join('\n')}` : null}
