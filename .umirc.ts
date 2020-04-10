@@ -1,8 +1,7 @@
-import { IConfig } from 'umi-types';
+import { defineConfig } from 'umi';
 
 // ref: https://umijs.org/config/
-const config: IConfig =  {
-  treeShaking: true,
+const config =  defineConfig({
   routes: [
     {
       path: '/',
@@ -12,22 +11,8 @@ const config: IConfig =  {
       ]
     }
   ],
-  plugins: [
-    // ref: https://umijs.org/plugin/umi-plugin-react.html
-    ['umi-plugin-react', {
-      antd: true,
-      dva: false,
-      dynamicImport: false,
-      title: 'antd-changelog',
-      dll: false,
-      
-      routes: {
-        exclude: [
-          /components\//,
-        ],
-      },
-    }],
-  ],
-}
+  antd: {},
+  title: 'antd-changelog',
+})
 
 export default config;
