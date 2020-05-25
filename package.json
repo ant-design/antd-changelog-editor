@@ -18,7 +18,7 @@
     "@types/react": "^16.7.18",
     "@types/react-dom": "^16.0.11",
     "@types/react-test-renderer": "^16.0.3",
-    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/eslint-plugin": "^3.0.0",
     "@typescript-eslint/parser": "^2.27.0",
     "@umijs/preset-react": "^1.4.12",
     "babel-eslint": "^9.0.0",
