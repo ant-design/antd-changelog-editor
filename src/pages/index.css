@@ -1,5 +1,3 @@
 .container {
-  margin: 40px auto;
-  width: 1200px;
-  max-width: calc(100vw - 80px);
+  padding: 24px 24px 0 24px;
 }

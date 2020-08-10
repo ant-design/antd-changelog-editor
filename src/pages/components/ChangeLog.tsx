@@ -140,6 +140,7 @@ export default function ChangeLog({ hashList, formValues, lang }: ChangeLogProps
         padding: 16,
         borderRadius: 2,
         whiteSpace: 'pre-wrap',
+        margin: 0,
       }}
     >
       {componentContext ? `${componentContext}\n` : null}

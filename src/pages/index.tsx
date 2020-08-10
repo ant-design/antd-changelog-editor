@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table, Input, Form, Select, Checkbox, Typography, Divider, Avatar } from 'antd';
+import { Table, Input, Form, Select, Checkbox, Typography, Divider, Avatar, Layout } from 'antd';
 import ChangeLog from './components/ChangeLog';
 import styles from './index.css';
 
@@ -21,7 +21,7 @@ export default function () {
     {
       title: 'PR / Commit',
       dataIndex: 'hash',
-      width: 120,
+      width: 80,
       render(value: string, { hash }: any) {
         return (
           <>
@@ -42,7 +42,7 @@ export default function () {
     {
       title: 'Category',
       dataIndex: 'emoji',
-      width: 180,
+      width: 140,
       render(value = '', { hash }: any) {
         return (
           <>
@@ -179,30 +179,39 @@ export default function () {
         />
         CHANGELOG Generator
       </Typography.Title>
-      <Form form={form} style={{ marginTop: 40 }}>
-        <Table
-          tableLayout="fixed"
-          columns={columns as any}
-          rowKey="hash"
-          dataSource={dataSource}
-          pagination={false}
-          size="small"
-          scroll={{ y: 'calc(100vh - 400px)' }}
-        />
-        <Form.Item shouldUpdate>
-          {(form) => {
-            const formValues = form.getFieldsValue(true);
-            const hashList = dataSource.map((item: { hash: string }) => item.hash);
-            return (
-              <>
-                <Divider style={{ margin: '40px 0' }}>🇨🇳 中文</Divider>
-                <ChangeLog hashList={hashList} formValues={formValues} lang="chinese" />
-                <Divider style={{ margin: '40px 0' }}>🇺🇸 English</Divider>
-                <ChangeLog hashList={hashList} formValues={formValues} lang="english" />
-              </>
-            );
-          }}
-        </Form.Item>
+      <Form form={form}>
+        <Layout style={{ background: '#fff' }}>
+          <Layout.Sider width="60%" style={{ background: '#fff' }}>
+            <Table
+              tableLayout="fixed"
+              columns={columns as any}
+              rowKey="hash"
+              dataSource={dataSource}
+              pagination={false}
+              size="small"
+              scroll={{ y: 'calc(100vh - 160px)' }}
+            />
+          </Layout.Sider>
+          <Layout.Content>
+            <Form.Item
+              shouldUpdate
+              style={{ padding: '0 24px', height: 'calc(100vh - 120px)', overflow: 'auto' }}
+            >
+              {(form) => {
+                const formValues = form.getFieldsValue(true);
+                const hashList = dataSource.map((item: { hash: string }) => item.hash);
+                return (
+                  <>
+                    <Divider>🇨🇳 中文日志 🇨🇳</Divider>
+                    <ChangeLog hashList={hashList} formValues={formValues} lang="chinese" />
+                    <Divider>🇺🇸 English Changelog 🇺🇸</Divider>
+                    <ChangeLog hashList={hashList} formValues={formValues} lang="english" />
+                  </>
+                );
+              }}
+            </Form.Item>
+          </Layout.Content>
+        </Layout>
       </Form>
     </div>
   );
