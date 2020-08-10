@@ -134,8 +134,9 @@ export default function () {
 
         chinese = chinese.replace('。。', '。');
         english = english.replace('..', '.');
+        const type = undefined as string | undefined;
 
-        const values = { chinese, english, author, type: '', use: true, pr, component };
+        const values = { chinese, english, author, type, use: true, pr, component };
 
         if (title.includes('rtl') || english.includes('rtl')) {
           values.type = 'rtl';
