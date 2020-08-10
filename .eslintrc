@@ -1,3 +1,6 @@
 {
-  "extends": "eslint-config-umi"
+  "extends": "eslint-config-umi",
+  "rules": {
+    "jsx-a11y/accessible-emoji": 0
+  }
 }

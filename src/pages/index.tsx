@@ -46,7 +46,7 @@ export default function() {
       width: 180,
       render(value = '', { hash }: any) {
         return (
-          <div>
+          <>
             <Form.Item name={[hash, 'type']} noStyle>
               <Select style={{ width: '100%' }} virtual={false} listHeight={500}>
                 <Select.Option value="bug">🐞 Bug</Select.Option>
@@ -68,7 +68,7 @@ export default function() {
             <Form.Item name={[hash, 'component']} noStyle>
               <Input style={{ marginTop: 6 }} placeholder="component name" />
             </Form.Item>
-          </div>
+          </>
         );
       },
     },
@@ -138,7 +138,7 @@ export default function() {
       },
     );
     form.setFieldsValue(formValues);
-  }, []);
+  }, [form]);
 
   return (
     <ConfigProvider componentSize="small">

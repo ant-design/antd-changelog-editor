@@ -4,7 +4,7 @@
     "start": "umi dev",
     "build": "umi build",
     "test": "umi test",
-    "lint": "eslint {src,mock,tests}/**/*.{ts,tsx} --fix",
+    "lint": "eslint src --fix",
     "postinstall": "umi g tmp",
     "precommit": "lint-staged"
   },
@@ -32,6 +32,7 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.8",
     "react-test-renderer": "^16.7.0",
+    "typescript": "^3.9.7",
     "umi": "^3.1.0"
   },
   "lint-staged": {
