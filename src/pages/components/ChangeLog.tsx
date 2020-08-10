@@ -135,8 +135,7 @@ export default function ChangeLog({ hashList, formValues, lang }: ChangeLogProps
   return (
     <pre
       style={{
-        border: '1px solid #e9e9e9',
-        background: '#fcfafc',
+        background: '#fafafa',
         textAlign: 'left',
         padding: 16,
         borderRadius: 2,

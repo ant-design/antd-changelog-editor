@@ -6,6 +6,8 @@ body,
 
 body {
   margin: 0;
+  font-family: Avenir, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial,
+    noto sans, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji, sans-serif !important;
 }
 
 td {

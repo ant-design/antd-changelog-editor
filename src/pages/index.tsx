@@ -1,15 +1,5 @@
 import React from 'react';
-import {
-  Table,
-  Input,
-  Form,
-  Select,
-  ConfigProvider,
-  Checkbox,
-  Typography,
-  Divider,
-  Avatar,
-} from 'antd';
+import { Table, Input, Form, Select, Checkbox, Typography, Divider, Avatar } from 'antd';
 import ChangeLog from './components/ChangeLog';
 import styles from './index.css';
 
@@ -22,21 +12,19 @@ export default function () {
       title: '',
       dataIndex: 'hash',
       width: 50,
-      render(value: string, { hash }: any) {
-        return (
-          <Form.Item name={[hash, 'use']} valuePropName="checked" noStyle>
-            <Checkbox />
-          </Form.Item>
-        );
-      },
+      render: (value: string, { hash }: any) => (
+        <Form.Item name={[hash, 'use']} valuePropName="checked" noStyle>
+          <Checkbox />
+        </Form.Item>
+      ),
     },
     {
-      title: 'PR',
+      title: 'PR / Commit',
       dataIndex: 'hash',
-      width: 80,
+      width: 120,
       render(value: string, { hash }: any) {
         return (
-          <div>
+          <>
             <Form.Item name={[hash, 'pr']} noStyle>
               <Input />
             </Form.Item>
@@ -47,19 +35,24 @@ export default function () {
             >
               {value.slice(0, 7)}
             </a>
-          </div>
+          </>
         );
       },
     },
     {
-      title: '类型',
+      title: 'Category',
       dataIndex: 'emoji',
       width: 180,
       render(value = '', { hash }: any) {
         return (
           <>
             <Form.Item name={[hash, 'type']} noStyle>
-              <Select style={{ width: '100%' }} virtual={false} listHeight={500}>
+              <Select
+                placeholder="请选择 emoji"
+                style={{ width: '100%' }}
+                virtual={false}
+                listHeight={500}
+              >
                 <Select.Option value="bug">🐞 Bug</Select.Option>
                 <Select.Option value="style">💄 样式</Select.Option>
                 <Select.Option value="feature">🆕 新特性</Select.Option>
@@ -84,7 +77,7 @@ export default function () {
       },
     },
     {
-      title: '中文',
+      title: '🇨🇳 中文日志',
       dataIndex: 'chinese',
       render(value = '', { hash }: any) {
         return (
@@ -95,7 +88,7 @@ export default function () {
       },
     },
     {
-      title: 'English',
+      title: '🇺🇸 English Changelog',
       dataIndex: 'english',
       render(value = '', { hash }: any) {
         return (
@@ -106,7 +99,7 @@ export default function () {
       },
     },
     {
-      title: 'Author',
+      title: '👩🏻‍💻 Author',
       dataIndex: 'author',
       width: 100,
       render(value = '', { hash }: any) {
@@ -152,43 +145,39 @@ export default function () {
   }, [form]);
 
   return (
-    <ConfigProvider componentSize="small">
-      <div className={styles.container}>
-        <Typography.Title level={1}>
-          <Avatar
-            src="https://gw.alipayobjects.com/zos/rmsportal/rlpTLlbMzTNYuZGGCVYM.png"
-            size="large"
-            style={{ marginRight: 12, position: 'relative', top: -4 }}
-          />
-          CHANGELOG Generator
-        </Typography.Title>
-        <Form form={form} style={{ marginTop: 40 }}>
-          <Table
-            tableLayout="fixed"
-            columns={columns as any}
-            rowKey="hash"
-            dataSource={dataSource}
-            pagination={false}
-            size="small"
-          />
-          <Form.Item shouldUpdate>
-            {(form) => {
-              const formValues = form.getFieldsValue(true);
-
-              const hashList = dataSource.map((item: { hash: string }) => item.hash);
-
-              return (
-                <>
-                  <Divider style={{ margin: '40px 0' }}>🇨🇳 中文</Divider>
-                  <ChangeLog hashList={hashList} formValues={formValues} lang="chinese" />
-                  <Divider style={{ margin: '40px 0' }}>🇺🇸 English</Divider>
-                  <ChangeLog hashList={hashList} formValues={formValues} lang="english" />
-                </>
-              );
-            }}
-          </Form.Item>
-        </Form>
-      </div>
-    </ConfigProvider>
+    <div className={styles.container}>
+      <Typography.Title level={1}>
+        <Avatar
+          src="https://gw.alipayobjects.com/zos/rmsportal/rlpTLlbMzTNYuZGGCVYM.png"
+          size="large"
+          style={{ marginRight: 12, position: 'relative', top: -4 }}
+        />
+        CHANGELOG Generator
+      </Typography.Title>
+      <Form form={form} style={{ marginTop: 40 }}>
+        <Table
+          tableLayout="fixed"
+          columns={columns as any}
+          rowKey="hash"
+          dataSource={dataSource}
+          pagination={false}
+          size="small"
+        />
+        <Form.Item shouldUpdate>
+          {(form) => {
+            const formValues = form.getFieldsValue(true);
+            const hashList = dataSource.map((item: { hash: string }) => item.hash);
+            return (
+              <>
+                <Divider style={{ margin: '40px 0' }}>🇨🇳 中文</Divider>
+                <ChangeLog hashList={hashList} formValues={formValues} lang="chinese" />
+                <Divider style={{ margin: '40px 0' }}>🇺🇸 English</Divider>
+                <ChangeLog hashList={hashList} formValues={formValues} lang="english" />
+              </>
+            );
+          }}
+        </Form.Item>
+      </Form>
+    </div>
   );
 }
