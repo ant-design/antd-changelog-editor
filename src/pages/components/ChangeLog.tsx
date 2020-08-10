@@ -97,7 +97,7 @@ export default function ChangeLog({ hashList, formValues, lang }: ChangeLogProps
         content += `[#${entity.pr}](https://github.com/ant-design/ant-design/pull/${entity.pr})`;
       } else {
         const showHash = hash.slice(0, 7);
-        content += `[#${showHash}](https://github.com/ant-design/ant-design/commit/${showHash})`;
+        content += `[${showHash}](https://github.com/ant-design/ant-design/commit/${showHash})`;
       }
 
       if (entity.author && !MAINTAINERS.includes(entity.author.toLowerCase())) {
