@@ -21,7 +21,7 @@
     "@typescript-eslint/eslint-plugin": "^3.0.0",
     "@typescript-eslint/parser": "^2.27.0",
     "@umijs/preset-react": "^1.4.12",
-    "babel-eslint": "^9.0.0",
+    "babel-eslint": "^10.1.0",
     "eslint": "^7.0.0",
     "eslint-config-umi": "^1.4.0",
     "eslint-plugin-flowtype": "^2.50.0",
