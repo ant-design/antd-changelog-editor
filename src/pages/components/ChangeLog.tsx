@@ -1,5 +1,6 @@
 import React from 'react';
 
+// https://github.com/orgs/ant-design/teams/ant-design-collaborators/members
 const MAINTAINERS = [
   'zombiej',
   'afc163',
@@ -7,6 +8,13 @@ const MAINTAINERS = [
   'shaodahong',
   'xrkffgg',
   'AshoneA',
+  'yesmeck',
+  'bang88',
+  'yoyo837',
+  'hengkx',
+  'Rustin-Liu',
+  'fireairforce',
+  'Kermit-Xuan'
 ].map(author => author.toLowerCase());
 
 export interface ChangeLogProps {
@@ -55,7 +63,7 @@ function getIcon(type: string) {
     case 'rtl':
       return '💄';
     case 'ts':
-      return null;
+      return '🤖';
 
     default:
       return '🚫';
