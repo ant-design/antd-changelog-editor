@@ -12,7 +12,8 @@ const config =  defineConfig({
     }
   ],
   antd: {},
-  title: 'antd changelog',
+  title: 'Ant Design CHANGELOG Generator',
+  favicon: 'https://gw.alipayobjects.com/zos/rmsportal/rlpTLlbMzTNYuZGGCVYM.png',
 })
 
 export default config;

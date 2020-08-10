@@ -1,6 +1,7 @@
 import React from 'react';
-import { Table, Input, Form, Select, ConfigProvider, Checkbox, Typography, Divider } from 'antd';
+import { Table, Input, Form, Select, ConfigProvider, Checkbox, Typography, Divider, Avatar } from 'antd';
 import ChangeLog from './components/ChangeLog';
+import styles from './index.css';
 
 export default function() {
   const [dataSource, setDataSource] = React.useState([]);
@@ -142,38 +143,42 @@ export default function() {
 
   return (
     <ConfigProvider componentSize="small">
-      <Form form={form}>
-        <div style={{ overflow: 'hidden' }}>
-          <Table
-            bordered
-            tableLayout="fixed"
-            columns={columns as any}
-            rowKey="hash"
-            dataSource={dataSource}
-            pagination={false}
-            size="small"
+      <div className={styles.container}>
+        <Typography.Title level={1}>
+          <Avatar
+            src="https://gw.alipayobjects.com/zos/rmsportal/rlpTLlbMzTNYuZGGCVYM.png"
+            size="large"
+            style={{ marginRight: 12, position: 'relative', top: -4 }}
           />
+          CHANGELOG Generator
+        </Typography.Title>
+        <Form form={form} style={{ marginTop: 40 }}>
+            <Table
+              tableLayout="fixed"
+              columns={columns as any}
+              rowKey="hash"
+              dataSource={dataSource}
+              pagination={false}
+              size="small"
+            />
+            <Form.Item shouldUpdate>
+              {form => {
+                const formValues = form.getFieldsValue(true);
 
-          <Form.Item shouldUpdate>
-            {form => {
-              const formValues = form.getFieldsValue(true);
+                const hashList = dataSource.map((item: { hash: string }) => item.hash);
 
-              const hashList = dataSource.map((item: { hash: string }) => item.hash);
-
-              return (
-                <div>
-                  <Divider />
-                  <Typography.Title level={4}>中文</Typography.Title>
-                  <ChangeLog hashList={hashList} formValues={formValues} lang="chinese" />
-                  <Divider />
-                  <Typography.Title level={4}>English</Typography.Title>
-                  <ChangeLog hashList={hashList} formValues={formValues} lang="english" />
-                </div>
-              );
-            }}
-          </Form.Item>
-        </div>
-      </Form>
+                return (
+                  <>
+                    <Divider style={{ margin: '40px 0' }}>🇨🇳 中文</Divider>
+                    <ChangeLog hashList={hashList} formValues={formValues} lang="chinese" />
+                    <Divider style={{ margin: '40px 0' }}>🇺🇸 English</Divider>
+                    <ChangeLog hashList={hashList} formValues={formValues} lang="english" />
+                  </>
+                );
+              }}
+            </Form.Item>
+        </Form>
+      </div>
     </ConfigProvider>
   );
 }

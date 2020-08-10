@@ -127,10 +127,10 @@ export default function ChangeLog({ hashList, formValues, lang }: ChangeLogProps
   return (
     <pre
       style={{
-        border: '1px solid #CCC',
-        background: '#f4f4f4',
+        border: '1px solid #e9e9e9',
+        background: '#fcfafc',
         textAlign: 'left',
-        padding: 8,
+        padding: 16,
         borderRadius: 2,
         whiteSpace: 'pre-wrap',
       }}
