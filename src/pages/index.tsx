@@ -1,9 +1,19 @@
 import React from 'react';
-import { Table, Input, Form, Select, ConfigProvider, Checkbox, Typography, Divider, Avatar } from 'antd';
+import {
+  Table,
+  Input,
+  Form,
+  Select,
+  ConfigProvider,
+  Checkbox,
+  Typography,
+  Divider,
+  Avatar,
+} from 'antd';
 import ChangeLog from './components/ChangeLog';
 import styles from './index.css';
 
-export default function() {
+export default function () {
   const [dataSource, setDataSource] = React.useState([]);
 
   const columns = [
@@ -153,30 +163,30 @@ export default function() {
           CHANGELOG Generator
         </Typography.Title>
         <Form form={form} style={{ marginTop: 40 }}>
-            <Table
-              tableLayout="fixed"
-              columns={columns as any}
-              rowKey="hash"
-              dataSource={dataSource}
-              pagination={false}
-              size="small"
-            />
-            <Form.Item shouldUpdate>
-              {form => {
-                const formValues = form.getFieldsValue(true);
+          <Table
+            tableLayout="fixed"
+            columns={columns as any}
+            rowKey="hash"
+            dataSource={dataSource}
+            pagination={false}
+            size="small"
+          />
+          <Form.Item shouldUpdate>
+            {(form) => {
+              const formValues = form.getFieldsValue(true);
 
-                const hashList = dataSource.map((item: { hash: string }) => item.hash);
+              const hashList = dataSource.map((item: { hash: string }) => item.hash);
 
-                return (
-                  <>
-                    <Divider style={{ margin: '40px 0' }}>🇨🇳 中文</Divider>
-                    <ChangeLog hashList={hashList} formValues={formValues} lang="chinese" />
-                    <Divider style={{ margin: '40px 0' }}>🇺🇸 English</Divider>
-                    <ChangeLog hashList={hashList} formValues={formValues} lang="english" />
-                  </>
-                );
-              }}
-            </Form.Item>
+              return (
+                <>
+                  <Divider style={{ margin: '40px 0' }}>🇨🇳 中文</Divider>
+                  <ChangeLog hashList={hashList} formValues={formValues} lang="chinese" />
+                  <Divider style={{ margin: '40px 0' }}>🇺🇸 English</Divider>
+                  <ChangeLog hashList={hashList} formValues={formValues} lang="english" />
+                </>
+              );
+            }}
+          </Form.Item>
         </Form>
       </div>
     </ConfigProvider>

@@ -14,8 +14,8 @@ const MAINTAINERS = [
   'hengkx',
   'Rustin-Liu',
   'fireairforce',
-  'Kermit-Xuan'
-].map(author => author.toLowerCase());
+  'Kermit-Xuan',
+].map((author) => author.toLowerCase());
 
 export interface ChangeLogProps {
   hashList: string[];
@@ -76,7 +76,7 @@ export default function ChangeLog({ hashList, formValues, lang }: ChangeLogProps
   const tsLines: string[] = [];
   const componentLines: Record<string, string[]> = {};
 
-  hashList.forEach(hash => {
+  hashList.forEach((hash) => {
     const entity = formValues[hash];
 
     if (!entity) {
@@ -123,10 +123,10 @@ export default function ChangeLog({ hashList, formValues, lang }: ChangeLogProps
   });
 
   const componentContext = Object.keys(componentLines)
-    .map(component => {
+    .map((component) => {
       const cLines = componentLines[component];
       if (cLines.length > 1) {
-        return `- ${component}\n${cLines.map(str => `  ${str}`).join('\n')}`;
+        return `- ${component}\n${cLines.map((str) => `  ${str}`).join('\n')}`;
       }
       return cLines[0];
     })
@@ -145,8 +145,8 @@ export default function ChangeLog({ hashList, formValues, lang }: ChangeLogProps
     >
       {componentContext ? `${componentContext}\n` : null}
       {lines.join('\n')}
-      {rtlLines.length ? `\n- RTL\n${rtlLines.map(str => `  ${str}`).join('\n')}` : null}
-      {tsLines.length ? `\n- TypeScript\n${tsLines.map(str => `  ${str}`).join('\n')}` : null}
+      {rtlLines.length ? `\n- RTL\n${rtlLines.map((str) => `  ${str}`).join('\n')}` : null}
+      {tsLines.length ? `\n- TypeScript\n${tsLines.map((str) => `  ${str}`).join('\n')}` : null}
     </pre>
   );
 }
