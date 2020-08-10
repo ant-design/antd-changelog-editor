@@ -1,5 +1,6 @@
 import React from 'react';
 
+// https://github.com/orgs/ant-design/teams/ant-design-collaborators/members
 const MAINTAINERS = [
   'zombiej',
   'afc163',
@@ -7,7 +8,14 @@ const MAINTAINERS = [
   'shaodahong',
   'xrkffgg',
   'AshoneA',
-].map(author => author.toLowerCase());
+  'yesmeck',
+  'bang88',
+  'yoyo837',
+  'hengkx',
+  'Rustin-Liu',
+  'fireairforce',
+  'Kermit-Xuan',
+].map((author) => author.toLowerCase());
 
 export interface ChangeLogProps {
   hashList: string[];
@@ -55,7 +63,7 @@ function getIcon(type: string) {
     case 'rtl':
       return '💄';
     case 'ts':
-      return null;
+      return '🤖';
 
     default:
       return '🚫';
@@ -68,7 +76,7 @@ export default function ChangeLog({ hashList, formValues, lang }: ChangeLogProps
   const tsLines: string[] = [];
   const componentLines: Record<string, string[]> = {};
 
-  hashList.forEach(hash => {
+  hashList.forEach((hash) => {
     const entity = formValues[hash];
 
     if (!entity) {
@@ -89,7 +97,7 @@ export default function ChangeLog({ hashList, formValues, lang }: ChangeLogProps
         content += `[#${entity.pr}](https://github.com/ant-design/ant-design/pull/${entity.pr})`;
       } else {
         const showHash = hash.slice(0, 7);
-        content += `[#${showHash}](https://github.com/ant-design/ant-design/commit/${showHash})`;
+        content += `[${showHash}](https://github.com/ant-design/ant-design/commit/${showHash})`;
       }
 
       if (entity.author && !MAINTAINERS.includes(entity.author.toLowerCase())) {
@@ -115,10 +123,10 @@ export default function ChangeLog({ hashList, formValues, lang }: ChangeLogProps
   });
 
   const componentContext = Object.keys(componentLines)
-    .map(component => {
+    .map((component) => {
       const cLines = componentLines[component];
       if (cLines.length > 1) {
-        return `- ${component}\n${cLines.map(str => `  ${str}`).join('\n')}`;
+        return `- ${component}\n${cLines.map((str) => `  ${str}`).join('\n')}`;
       }
       return cLines[0];
     })
@@ -127,18 +135,18 @@ export default function ChangeLog({ hashList, formValues, lang }: ChangeLogProps
   return (
     <pre
       style={{
-        border: '1px solid #CCC',
-        background: '#f4f4f4',
+        background: '#fafafa',
         textAlign: 'left',
-        padding: 8,
+        padding: 16,
         borderRadius: 2,
         whiteSpace: 'pre-wrap',
+        margin: 0,
       }}
     >
       {componentContext ? `${componentContext}\n` : null}
       {lines.join('\n')}
-      {rtlLines.length ? `\n- RTL\n${rtlLines.map(str => `  ${str}`).join('\n')}` : null}
-      {tsLines.length ? `\n- TypeScript\n${tsLines.map(str => `  ${str}`).join('\n')}` : null}
+      {rtlLines.length ? `\n- RTL\n${rtlLines.map((str) => `  ${str}`).join('\n')}` : null}
+      {tsLines.length ? `\n- TypeScript\n${tsLines.map((str) => `  ${str}`).join('\n')}` : null}
     </pre>
   );
 }
