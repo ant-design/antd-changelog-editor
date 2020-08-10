@@ -26,7 +26,7 @@ export default function () {
         return (
           <>
             <Form.Item name={[hash, 'pr']} noStyle>
-              <Input />
+              <Input placeholder="NO PR" />
             </Form.Item>
             <a
               href={`https://github.com/ant-design/ant-design/commit/${value}`}
@@ -82,7 +82,7 @@ export default function () {
       render(value = '', { hash }: any) {
         return (
           <Form.Item name={[hash, 'chinese']} noStyle>
-            <Input.TextArea rows={2} />
+            <Input.TextArea rows={2} placeholder="请填写更新日志" />
           </Form.Item>
         );
       },
@@ -93,7 +93,7 @@ export default function () {
       render(value = '', { hash }: any) {
         return (
           <Form.Item name={[hash, 'english']} noStyle>
-            <Input.TextArea rows={2} />
+            <Input.TextArea rows={2} placeholder="please add changelog" />
           </Form.Item>
         );
       },
@@ -121,8 +121,8 @@ export default function () {
     const formValues: Record<string, any> = {};
     changelog.forEach(
       ({ hash, chinese = '', english = '', author = '', pr = '', component = '' }: any) => {
-        chinese = `${chinese.trim()}。`;
-        english = `${english.trim()}.`;
+        chinese = chinese.trim() ? `${chinese.trim()}。` : '';
+        english = english.trim() ? `${english.trim()}.` : '';
 
         chinese = chinese.replace('。。', '。');
         english = english.replace('..', '.');
@@ -162,6 +162,7 @@ export default function () {
           dataSource={dataSource}
           pagination={false}
           size="small"
+          scroll={{ y: 'calc(100vh - 400px)' }}
         />
         <Form.Item shouldUpdate>
           {(form) => {
