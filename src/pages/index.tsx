@@ -120,7 +120,15 @@ export default function () {
 
     const formValues: Record<string, any> = {};
     changelog.forEach(
-      ({ hash, chinese = '', english = '', author = '', pr = '', component = '' }: any) => {
+      ({
+        hash,
+        chinese = '',
+        english = '',
+        author = '',
+        pr = '',
+        component = '',
+        title = '',
+      }: any) => {
         chinese = chinese.trim() ? `${chinese.trim()}。` : '';
         english = english.trim() ? `${english.trim()}.` : '';
 
@@ -129,11 +137,27 @@ export default function () {
 
         const values = { chinese, english, author, type: '', use: true, pr, component };
 
-        if (english.includes('fix') || chinese.includes('修复')) {
-          values.type = 'bug';
-        } else if (english.includes('style') || chinese.includes('样式')) {
+        if (title.includes('rtl') || english.includes('rtl')) {
+          values.type = 'rtl';
+        } else if (
+          english.includes('style') ||
+          chinese.includes('样式') ||
+          title.includes('sttyle') ||
+          title.includes('💄')
+        ) {
           values.type = 'style';
-        } else if (english.includes('docs:')) {
+        } else if (
+          english.includes('fix') ||
+          english.includes('bug') ||
+          title.includes('fix') ||
+          title.includes('🐞') ||
+          title.includes('🐛') ||
+          title.includes('bug') ||
+          chinese.includes('修复') ||
+          chinese.includes('修正')
+        ) {
+          values.type = 'bug';
+        } else if (english.includes('docs:') || title.includes('docs:')) {
           values.type = 'doc';
           values.use = false;
         }
