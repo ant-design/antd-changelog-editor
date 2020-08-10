@@ -1,3 +1,8 @@
 # Ant Design Changelog Editor
 
-![Preview](https://user-images.githubusercontent.com/5378891/78975122-ffa22e00-7b45-11ea-8893-5f36e3c4b222.png)
+```
+cd ant-design
+npm run changelog
+```
+
+![Preview](https://user-images.githubusercontent.com/507615/89773062-c8647d80-db35-11ea-8767-d4ff70a75ae3.png)
