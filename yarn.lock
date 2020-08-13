@@ -2595,20 +2595,20 @@
   resolved "https://registry.npm.taobao.org/@umijs/plugin-initial-state/download/@umijs/plugin-initial-state-2.2.1.tgz#cd7592aa90b6b369bd0df297254320088397ff67"
   integrity sha1-zXWSqpC2s2m9DfKXJUMgCIOX/2c=
 
-"@umijs/plugin-layout@0.11.13":
-  version "0.11.13"
-  resolved "https://registry.npm.taobao.org/@umijs/plugin-layout/download/@umijs/plugin-layout-0.11.13.tgz?cache=0&sync_timestamp=1595228112122&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40umijs%2Fplugin-layout%2Fdownload%2F%40umijs%2Fplugin-layout-0.11.13.tgz#4c9e1692b7be4eb28068721a2986bb8ef27e3c12"
-  integrity sha1-TJ4Wkre+TrKAaHIaKYa7jvJ+PBI=
+"@umijs/plugin-layout@0.11.14":
+  version "0.11.14"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-layout/-/plugin-layout-0.11.14.tgz#d4d153ed97ca48654eb5aacf9b2b5073fab60371"
+  integrity sha512-KUURRoAGGpEGOdBjqNE3AU2S0djr92Y2bif9N0uAsnwrvjM21A041G17luF7YFcg9/agq/hhkCPI2sjeCqu8kg==
   dependencies:
     "@umijs/route-utils" "^1.0.7"
     antd "^4.1.2"
     lodash "^4.17.15"
     path-to-regexp "1.x"
 
-"@umijs/plugin-locale@0.9.0":
-  version "0.9.0"
-  resolved "https://registry.npm.taobao.org/@umijs/plugin-locale/download/@umijs/plugin-locale-0.9.0.tgz?cache=0&sync_timestamp=1593352107590&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40umijs%2Fplugin-locale%2Fdownload%2F%40umijs%2Fplugin-locale-0.9.0.tgz#6f2723877ed914c8042012287613a548d0adc0ff"
-  integrity sha1-bycjh37ZFMgEIBIodhOlSNCtwP8=
+"@umijs/plugin-locale@0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-locale/-/plugin-locale-0.9.1.tgz#bf1bd948f615b7860c0d67e41b93ebb843a997f1"
+  integrity sha512-Z5/riKkBDSNEDD9qE/K0AcGJoggZVuEzrjBCYGek6P95Hc55TZdHXdFtM2lfW9gWpFSpqeL59UyHk2lGbpkagA==
   dependencies:
     "@ant-design/icons" "^4.1.0"
     "@formatjs/intl-pluralrules" "^1.5.0"
@@ -2618,17 +2618,17 @@
     react-intl "3.12.0"
     warning "^4.0.3"
 
-"@umijs/plugin-model@2.5.1":
-  version "2.5.1"
-  resolved "https://registry.npm.taobao.org/@umijs/plugin-model/download/@umijs/plugin-model-2.5.1.tgz?cache=0&sync_timestamp=1594108752992&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40umijs%2Fplugin-model%2Fdownload%2F%40umijs%2Fplugin-model-2.5.1.tgz#35f4b18eab1b2d86edbf35e1760f62dab61452c3"
-  integrity sha1-NfSxjqsbLYbtvzXhdg9i2rYUUsM=
+"@umijs/plugin-model@2.5.3":
+  version "2.5.3"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-model/-/plugin-model-2.5.3.tgz#2d932daa67dee78f405b9b9e0aa2a44721305d33"
+  integrity sha512-36bxjWfm4diCkZmZMMY2hMLWCAoZ+hxsQ1g439bS6nNDL1yQz8J7Vh55R8UpTVA2Djm8zKUBjgCsmbBvYpVtMg==
   dependencies:
     fast-deep-equal "3.1.1"
 
-"@umijs/plugin-request@2.4.1":
-  version "2.4.1"
-  resolved "https://registry.npm.taobao.org/@umijs/plugin-request/download/@umijs/plugin-request-2.4.1.tgz?cache=0&sync_timestamp=1594108753188&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40umijs%2Fplugin-request%2Fdownload%2F%40umijs%2Fplugin-request-2.4.1.tgz#7295749caddd3c52be472eef6623a7b441ed17d6"
-  integrity sha1-cpV0nK3dPFK+Ry7vZiOntEHtF9Y=
+"@umijs/plugin-request@2.4.2":
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-request/-/plugin-request-2.4.2.tgz#9fa59d355dd6018b6bd14573c4413d2ea2f3fd1e"
+  integrity sha512-Og5Uc8Q72SefSAC0G1gnTQpjH5+GWBdDweOPCJ3EyibJWSvukdOcoqmaTvfpltUu5Tx6g3ZRo1PB1LDwvhdEpg==
   dependencies:
     "@ahooksjs/use-request" "^2.0.0"
     umi-request "^1.2.14"
@@ -2676,10 +2676,10 @@
     umi-webpack-bundle-analyzer "3.5.0"
     zlib "1.0.5"
 
-"@umijs/preset-react@^1.4.12":
-  version "1.5.19"
-  resolved "https://registry.npm.taobao.org/@umijs/preset-react/download/@umijs/preset-react-1.5.19.tgz?cache=0&sync_timestamp=1595228111287&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40umijs%2Fpreset-react%2Fdownload%2F%40umijs%2Fpreset-react-1.5.19.tgz#3b36a3f12c263202765610ffc1ff4a8bea49385e"
-  integrity sha1-Ozaj8SwmMgJ2VhD/wf9Ki+pJOF4=
+"@umijs/preset-react@^1.5.21":
+  version "1.5.21"
+  resolved "https://registry.yarnpkg.com/@umijs/preset-react/-/preset-react-1.5.21.tgz#7914bd311a429b2c9c5e33eb8b43565e88f923ec"
+  integrity sha512-perCzbyFKJxgbHKfNJShXSlcEY5T+ZtOE7I6Gd7f5vyGpFX69P1GJIZjfgRUGmSsMh2NDijW9jEYmVeCD7/98g==
   dependencies:
     "@umijs/plugin-access" "2.3.1"
     "@umijs/plugin-analytics" "0.2.2"
@@ -2688,10 +2688,10 @@
     "@umijs/plugin-dva" "0.7.4"
     "@umijs/plugin-helmet" "1.0.2"
     "@umijs/plugin-initial-state" "2.2.1"
-    "@umijs/plugin-layout" "0.11.13"
-    "@umijs/plugin-locale" "0.9.0"
-    "@umijs/plugin-model" "2.5.1"
-    "@umijs/plugin-request" "2.4.1"
+    "@umijs/plugin-layout" "0.11.14"
+    "@umijs/plugin-locale" "0.9.1"
+    "@umijs/plugin-model" "2.5.3"
+    "@umijs/plugin-request" "2.4.2"
     "@umijs/plugin-test" "1.0.0"
 
 "@umijs/renderer-mpa@3.2.14":
