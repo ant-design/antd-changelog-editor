@@ -33,7 +33,7 @@
     "husky": "^4.2.5",
     "react-test-renderer": "^16.7.0",
     "typescript": "^3.9.7",
-    "umi": "^3.2.16"
+    "umi": "^3.2.17"
   },
   "husky": {
     "hooks": {
