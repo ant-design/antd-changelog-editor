@@ -2146,10 +2146,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-helmet@6.0.0":
-  version "6.0.0"
-  resolved "https://registry.npm.taobao.org/@types/react-helmet/download/@types/react-helmet-6.0.0.tgz?cache=0&sync_timestamp=1596840727373&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Freact-helmet%2Fdownload%2F%40types%2Freact-helmet-6.0.0.tgz#5b74e44a12662ffb12d1c97ee702cf4e220958cf"
-  integrity sha1-W3TkShJmL/sS0cl+5wLPTiIJWM8=
+"@types/react-helmet@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@types/react-helmet/-/react-helmet-6.1.0.tgz#af586ed685f4905e2adc7462d1d65ace52beee7a"
+  integrity sha512-PYRoU1XJFOzQ3BHvWL1T8iDNbRjdMDJMT5hFmZKGbsq09kbSqJy61uwEpTrbTNWDopVphUT34zUSVLK9pjsgYQ==
   dependencies:
     "@types/react" "*"
 
@@ -2622,10 +2622,10 @@
   resolved "https://registry.npm.taobao.org/@umijs/plugin-analytics/download/@umijs/plugin-analytics-0.2.2.tgz#575fd231d4327ea13413217aa1b5fc6bdd89465e"
   integrity sha1-V1/SMdQyfqE0EyF6obX8a92JRl4=
 
-"@umijs/plugin-antd@0.7.0":
-  version "0.7.0"
-  resolved "https://registry.npm.taobao.org/@umijs/plugin-antd/download/@umijs/plugin-antd-0.7.0.tgz#c9bbfd9f29bd1f6be7cc36d7226ffa5fbde1b9cc"
-  integrity sha1-ybv9nym9H2vnzDbXIm/6X73hucw=
+"@umijs/plugin-antd@0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-antd/-/plugin-antd-0.8.0.tgz#0dae96f2aada81dbd494ee19f9329f1a63cff1ff"
+  integrity sha512-Pz9DOd6kwYvAQUGbKfyVnezCROGLLQzwfi6QFvMnsCh1iV2g1Kfk0tg3hEbzsUkXHPgeMLx+qj7KQFwHWWM1+w==
   dependencies:
     antd "^4.1.3"
     antd-mobile "^2.3.1"
@@ -2635,43 +2635,43 @@
   resolved "https://registry.npm.taobao.org/@umijs/plugin-crossorigin/download/@umijs/plugin-crossorigin-1.1.1.tgz?cache=0&sync_timestamp=1595226417352&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40umijs%2Fplugin-crossorigin%2Fdownload%2F%40umijs%2Fplugin-crossorigin-1.1.1.tgz#0e5ffb8013c95470fce79cfbd6a29a9ad58df4c9"
   integrity sha1-Dl/7gBPJVHD855z71qKamtWN9Mk=
 
-"@umijs/plugin-dva@0.7.4":
-  version "0.7.4"
-  resolved "https://registry.npm.taobao.org/@umijs/plugin-dva/download/@umijs/plugin-dva-0.7.4.tgz#07e1c2dcb466df0187cd9ec483598b267628095c"
-  integrity sha1-B+HC3LRm3wGHzZ7Eg1mLJnYoCVw=
+"@umijs/plugin-dva@0.8.2":
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-dva/-/plugin-dva-0.8.2.tgz#85a052d77d7520fca539415cc8c8c56432806892"
+  integrity sha512-4LhVk7AJwgzyoTjzEsMwHljsiR6+FBSakt+rNO3sI4ciYQkNWkXDXekjuw/ZQz3FXHf2uTAk4fgPsJBqq8frAw==
   dependencies:
     babel-plugin-dva-hmr "^0.4.2"
     dva "^2.6.0-beta.20"
     dva-immer "^0.4.19"
     dva-loading "^3.0.20"
 
-"@umijs/plugin-helmet@1.0.2":
-  version "1.0.2"
-  resolved "https://registry.npm.taobao.org/@umijs/plugin-helmet/download/@umijs/plugin-helmet-1.0.2.tgz#9db9d1d257778f94d12587dd6b717af91970e4c9"
-  integrity sha1-nbnR0ld3j5TRJYfda3F6+Rlw5Mk=
+"@umijs/plugin-helmet@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-helmet/-/plugin-helmet-1.1.1.tgz#841aea37b5076b51c2f332659bf9c671cf63794d"
+  integrity sha512-S2MyqjLddQ4o9jTqfEdEsZhhmHTPUlqoLYdsMtbaTUlfChnQ/ed+3WCwuF5bkVVqhea+Yi4ctxPa+k3xBUhmcg==
   dependencies:
-    "@types/react-helmet" "6.0.0"
-    react-helmet "6.0.0"
+    "@types/react-helmet" "^6.1.0"
+    react-helmet "^6.1.0"
 
 "@umijs/plugin-initial-state@2.2.1":
   version "2.2.1"
   resolved "https://registry.npm.taobao.org/@umijs/plugin-initial-state/download/@umijs/plugin-initial-state-2.2.1.tgz#cd7592aa90b6b369bd0df297254320088397ff67"
   integrity sha1-zXWSqpC2s2m9DfKXJUMgCIOX/2c=
 
-"@umijs/plugin-layout@0.11.14":
-  version "0.11.14"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-layout/-/plugin-layout-0.11.14.tgz#d4d153ed97ca48654eb5aacf9b2b5073fab60371"
-  integrity sha512-KUURRoAGGpEGOdBjqNE3AU2S0djr92Y2bif9N0uAsnwrvjM21A041G17luF7YFcg9/agq/hhkCPI2sjeCqu8kg==
+"@umijs/plugin-layout@0.12.1":
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-layout/-/plugin-layout-0.12.1.tgz#6a67f1347fe5fca2e986641ab136c186bd1aa8f9"
+  integrity sha512-ICl0WmT3FIOQJ+qGfyFPTl11dIuaUmhBme6xNniPUE43TBjYo65+o2vfnsG2qZZF6YB/MjxLYB3PZ7WuTKlLoA==
   dependencies:
     "@umijs/route-utils" "^1.0.7"
     antd "^4.1.2"
     lodash "^4.17.15"
     path-to-regexp "1.x"
 
-"@umijs/plugin-locale@0.9.1":
-  version "0.9.1"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-locale/-/plugin-locale-0.9.1.tgz#bf1bd948f615b7860c0d67e41b93ebb843a997f1"
-  integrity sha512-Z5/riKkBDSNEDD9qE/K0AcGJoggZVuEzrjBCYGek6P95Hc55TZdHXdFtM2lfW9gWpFSpqeL59UyHk2lGbpkagA==
+"@umijs/plugin-locale@0.10.1":
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-locale/-/plugin-locale-0.10.1.tgz#d9e037223062cb216c232219c7819ef800948437"
+  integrity sha512-dKGLerDGbpCTH0wCwmwNGC1EqEziMwFpkDRIjN0oBZ/YVTBwZgcs0u/3Ruf6YnBgDGJbtJ6WoleC6M4Rb6IJvQ==
   dependencies:
     "@ant-design/icons" "^4.1.0"
     "@formatjs/intl-pluralrules" "^1.5.0"
@@ -2688,10 +2688,10 @@
   dependencies:
     fast-deep-equal "3.1.1"
 
-"@umijs/plugin-request@2.4.2":
-  version "2.4.2"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-request/-/plugin-request-2.4.2.tgz#9fa59d355dd6018b6bd14573c4413d2ea2f3fd1e"
-  integrity sha512-Og5Uc8Q72SefSAC0G1gnTQpjH5+GWBdDweOPCJ3EyibJWSvukdOcoqmaTvfpltUu5Tx6g3ZRo1PB1LDwvhdEpg==
+"@umijs/plugin-request@2.5.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-request/-/plugin-request-2.5.0.tgz#3b222be9400c3c21ac84bdeefbd4103e48690748"
+  integrity sha512-fC0zLMmMP0PGqFtI6pyb8fJd9HovMuNPUSrjDH2YFcyyd0m9FOdjnuL2VcfvHBI1RcpfdW6LJ/dxw+ggeeoyaQ==
   dependencies:
     "@ahooksjs/use-request" "^2.0.0"
     umi-request "^1.2.14"
@@ -2739,22 +2739,22 @@
     umi-webpack-bundle-analyzer "3.6.0"
     zlib "1.0.5"
 
-"@umijs/preset-react@^1.5.21":
-  version "1.5.21"
-  resolved "https://registry.yarnpkg.com/@umijs/preset-react/-/preset-react-1.5.21.tgz#7914bd311a429b2c9c5e33eb8b43565e88f923ec"
-  integrity sha512-perCzbyFKJxgbHKfNJShXSlcEY5T+ZtOE7I6Gd7f5vyGpFX69P1GJIZjfgRUGmSsMh2NDijW9jEYmVeCD7/98g==
+"@umijs/preset-react@^1.6.4":
+  version "1.6.4"
+  resolved "https://registry.yarnpkg.com/@umijs/preset-react/-/preset-react-1.6.4.tgz#dd34f54172cac073817e240933707f2cd7c6bc82"
+  integrity sha512-Q9EtTo2+N0WApg2Ws3Gx7t95UhdbD6qZx3YSaij7OJHW7yS9gJmhWDdkicMBoheTTNnF93zJWMG+qZ7FhwTIjA==
   dependencies:
     "@umijs/plugin-access" "2.3.1"
     "@umijs/plugin-analytics" "0.2.2"
-    "@umijs/plugin-antd" "0.7.0"
+    "@umijs/plugin-antd" "0.8.0"
     "@umijs/plugin-crossorigin" "1.1.1"
-    "@umijs/plugin-dva" "0.7.4"
-    "@umijs/plugin-helmet" "1.0.2"
+    "@umijs/plugin-dva" "0.8.2"
+    "@umijs/plugin-helmet" "1.1.1"
     "@umijs/plugin-initial-state" "2.2.1"
-    "@umijs/plugin-layout" "0.11.14"
-    "@umijs/plugin-locale" "0.9.1"
+    "@umijs/plugin-layout" "0.12.1"
+    "@umijs/plugin-locale" "0.10.1"
     "@umijs/plugin-model" "2.5.3"
-    "@umijs/plugin-request" "2.4.2"
+    "@umijs/plugin-request" "2.5.0"
     "@umijs/plugin-test" "1.0.0"
 
 "@umijs/renderer-mpa@3.2.16":
@@ -10842,19 +10842,19 @@ react-error-overlay@6.0.7:
   resolved "https://registry.npm.taobao.org/react-error-overlay/download/react-error-overlay-6.0.7.tgz?cache=0&sync_timestamp=1596649575508&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-error-overlay%2Fdownload%2Freact-error-overlay-6.0.7.tgz#1dcfb459ab671d53f660a991513cb2f0a0553108"
   integrity sha1-Hc+0WatnHVP2YKmRUTyy8KBVMQg=
 
-react-fast-compare@^2.0.4:
-  version "2.0.4"
-  resolved "https://registry.npm.taobao.org/react-fast-compare/download/react-fast-compare-2.0.4.tgz#e84b4d455b0fec113e0402c329352715196f81f9"
-  integrity sha1-6EtNRVsP7BE+BALDKTUnFRlvgfk=
+react-fast-compare@^3.1.1:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-3.2.0.tgz#641a9da81b6a6320f270e89724fb45a0b39e43bb"
+  integrity sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==
 
-react-helmet@6.0.0:
-  version "6.0.0"
-  resolved "https://registry.npm.taobao.org/react-helmet/download/react-helmet-6.0.0.tgz?cache=0&sync_timestamp=1591591054511&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-helmet%2Fdownload%2Freact-helmet-6.0.0.tgz#fcb93ebaca3ba562a686eb2f1f9d46093d83b5f8"
-  integrity sha1-/Lk+uso7pWKmhusvH51GCT2Dtfg=
+react-helmet@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/react-helmet/-/react-helmet-6.1.0.tgz#a750d5165cb13cf213e44747502652e794468726"
+  integrity sha512-4uMzEY9nlDlgxr61NL3XbKRy1hEkXmKNXhjbAIOVw5vcFrsdYbH2FEwcNyWvWinl103nXgzYNlns9ca+8kFiWw==
   dependencies:
     object-assign "^4.1.1"
     prop-types "^15.7.2"
-    react-fast-compare "^2.0.4"
+    react-fast-compare "^3.1.1"
     react-side-effect "^2.1.0"
 
 react-intl@3.12.0:
