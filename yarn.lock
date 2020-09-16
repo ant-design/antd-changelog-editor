@@ -2697,10 +2697,10 @@
   resolved "https://registry.npm.taobao.org/@umijs/plugin-crossorigin/download/@umijs/plugin-crossorigin-1.1.1.tgz?cache=0&sync_timestamp=1595226417352&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40umijs%2Fplugin-crossorigin%2Fdownload%2F%40umijs%2Fplugin-crossorigin-1.1.1.tgz#0e5ffb8013c95470fce79cfbd6a29a9ad58df4c9"
   integrity sha1-Dl/7gBPJVHD855z71qKamtWN9Mk=
 
-"@umijs/plugin-dva@0.8.2":
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-dva/-/plugin-dva-0.8.2.tgz#85a052d77d7520fca539415cc8c8c56432806892"
-  integrity sha512-4LhVk7AJwgzyoTjzEsMwHljsiR6+FBSakt+rNO3sI4ciYQkNWkXDXekjuw/ZQz3FXHf2uTAk4fgPsJBqq8frAw==
+"@umijs/plugin-dva@0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-dva/-/plugin-dva-0.9.0.tgz#898de8284e30add4c81c662f489b7e0f3752a750"
+  integrity sha512-v59huDHZGM9Ugy+gmMAQef+DXRAs+ZBhWOaSLUQxTzSHHzVaIvqh0CXAwilSTeF6d3Pt2KuStsoYV6QSJPqi0A==
   dependencies:
     babel-plugin-dva-hmr "^0.4.2"
     dva "^2.6.0-beta.20"
@@ -2720,10 +2720,10 @@
   resolved "https://registry.npm.taobao.org/@umijs/plugin-initial-state/download/@umijs/plugin-initial-state-2.2.1.tgz#cd7592aa90b6b369bd0df297254320088397ff67"
   integrity sha1-zXWSqpC2s2m9DfKXJUMgCIOX/2c=
 
-"@umijs/plugin-layout@0.12.1":
-  version "0.12.1"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-layout/-/plugin-layout-0.12.1.tgz#6a67f1347fe5fca2e986641ab136c186bd1aa8f9"
-  integrity sha512-ICl0WmT3FIOQJ+qGfyFPTl11dIuaUmhBme6xNniPUE43TBjYo65+o2vfnsG2qZZF6YB/MjxLYB3PZ7WuTKlLoA==
+"@umijs/plugin-layout@0.12.2":
+  version "0.12.2"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-layout/-/plugin-layout-0.12.2.tgz#729930e82a62a930950d2e466de6fa350190c1c0"
+  integrity sha512-EqdhzLS9+wS80ZpAFK04aZUCaiU3IWKfaLh2j8qWh4C0cTRtmLRBgake6suV8AHIQj3NPwohsq2s55Qt/S/sLw==
   dependencies:
     "@umijs/route-utils" "^1.0.7"
     antd "^4.1.2"
@@ -2801,19 +2801,19 @@
     umi-webpack-bundle-analyzer "3.6.0"
     zlib "1.0.5"
 
-"@umijs/preset-react@^1.6.4":
-  version "1.6.4"
-  resolved "https://registry.yarnpkg.com/@umijs/preset-react/-/preset-react-1.6.4.tgz#dd34f54172cac073817e240933707f2cd7c6bc82"
-  integrity sha512-Q9EtTo2+N0WApg2Ws3Gx7t95UhdbD6qZx3YSaij7OJHW7yS9gJmhWDdkicMBoheTTNnF93zJWMG+qZ7FhwTIjA==
+"@umijs/preset-react@^1.6.5":
+  version "1.6.5"
+  resolved "https://registry.yarnpkg.com/@umijs/preset-react/-/preset-react-1.6.5.tgz#4b5fd5a6d99979c3a01d33d13e647054f64e3596"
+  integrity sha512-mvbqsQWizdYBFyd4MkDF3/e7cXUQ8coVHw98XIDPJ/wpqfLbfcoFcd0kKpH2txEqVaejcIgmkFDQwR4m6py9Bw==
   dependencies:
     "@umijs/plugin-access" "2.3.1"
     "@umijs/plugin-analytics" "0.2.2"
     "@umijs/plugin-antd" "0.8.0"
     "@umijs/plugin-crossorigin" "1.1.1"
-    "@umijs/plugin-dva" "0.8.2"
+    "@umijs/plugin-dva" "0.9.0"
     "@umijs/plugin-helmet" "1.1.1"
     "@umijs/plugin-initial-state" "2.2.1"
-    "@umijs/plugin-layout" "0.12.1"
+    "@umijs/plugin-layout" "0.12.2"
     "@umijs/plugin-locale" "0.10.1"
     "@umijs/plugin-model" "2.5.3"
     "@umijs/plugin-request" "2.5.0"
