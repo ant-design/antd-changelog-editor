@@ -2697,10 +2697,10 @@
   resolved "https://registry.npm.taobao.org/@umijs/plugin-crossorigin/download/@umijs/plugin-crossorigin-1.1.1.tgz?cache=0&sync_timestamp=1595226417352&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40umijs%2Fplugin-crossorigin%2Fdownload%2F%40umijs%2Fplugin-crossorigin-1.1.1.tgz#0e5ffb8013c95470fce79cfbd6a29a9ad58df4c9"
   integrity sha1-Dl/7gBPJVHD855z71qKamtWN9Mk=
 
-"@umijs/plugin-dva@0.8.2":
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-dva/-/plugin-dva-0.8.2.tgz#85a052d77d7520fca539415cc8c8c56432806892"
-  integrity sha512-4LhVk7AJwgzyoTjzEsMwHljsiR6+FBSakt+rNO3sI4ciYQkNWkXDXekjuw/ZQz3FXHf2uTAk4fgPsJBqq8frAw==
+"@umijs/plugin-dva@0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-dva/-/plugin-dva-0.9.0.tgz#898de8284e30add4c81c662f489b7e0f3752a750"
+  integrity sha512-v59huDHZGM9Ugy+gmMAQef+DXRAs+ZBhWOaSLUQxTzSHHzVaIvqh0CXAwilSTeF6d3Pt2KuStsoYV6QSJPqi0A==
   dependencies:
     babel-plugin-dva-hmr "^0.4.2"
     dva "^2.6.0-beta.20"
@@ -2720,20 +2720,20 @@
   resolved "https://registry.npm.taobao.org/@umijs/plugin-initial-state/download/@umijs/plugin-initial-state-2.2.1.tgz#cd7592aa90b6b369bd0df297254320088397ff67"
   integrity sha1-zXWSqpC2s2m9DfKXJUMgCIOX/2c=
 
-"@umijs/plugin-layout@0.12.1":
-  version "0.12.1"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-layout/-/plugin-layout-0.12.1.tgz#6a67f1347fe5fca2e986641ab136c186bd1aa8f9"
-  integrity sha512-ICl0WmT3FIOQJ+qGfyFPTl11dIuaUmhBme6xNniPUE43TBjYo65+o2vfnsG2qZZF6YB/MjxLYB3PZ7WuTKlLoA==
+"@umijs/plugin-layout@0.12.2":
+  version "0.12.2"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-layout/-/plugin-layout-0.12.2.tgz#729930e82a62a930950d2e466de6fa350190c1c0"
+  integrity sha512-EqdhzLS9+wS80ZpAFK04aZUCaiU3IWKfaLh2j8qWh4C0cTRtmLRBgake6suV8AHIQj3NPwohsq2s55Qt/S/sLw==
   dependencies:
     "@umijs/route-utils" "^1.0.7"
     antd "^4.1.2"
     lodash "^4.17.15"
     path-to-regexp "1.x"
 
-"@umijs/plugin-locale@0.10.1":
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-locale/-/plugin-locale-0.10.1.tgz#d9e037223062cb216c232219c7819ef800948437"
-  integrity sha512-dKGLerDGbpCTH0wCwmwNGC1EqEziMwFpkDRIjN0oBZ/YVTBwZgcs0u/3Ruf6YnBgDGJbtJ6WoleC6M4Rb6IJvQ==
+"@umijs/plugin-locale@0.10.2":
+  version "0.10.2"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-locale/-/plugin-locale-0.10.2.tgz#8ed5ec62d5fd6690a196ab71e379e1626139ac49"
+  integrity sha512-vr9vY5aaOBJKsBibdATYMOoupstgEylN5fJXW30nIU+ZZviaFh9H6G6Fkk7nAj81DbFZ7WE1xWVq5A6UyDWAWw==
   dependencies:
     "@ant-design/icons" "^4.1.0"
     "@formatjs/intl-pluralrules" "^1.5.0"
@@ -2743,10 +2743,10 @@
     react-intl "3.12.0"
     warning "^4.0.3"
 
-"@umijs/plugin-model@2.5.3":
-  version "2.5.3"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-model/-/plugin-model-2.5.3.tgz#2d932daa67dee78f405b9b9e0aa2a44721305d33"
-  integrity sha512-36bxjWfm4diCkZmZMMY2hMLWCAoZ+hxsQ1g439bS6nNDL1yQz8J7Vh55R8UpTVA2Djm8zKUBjgCsmbBvYpVtMg==
+"@umijs/plugin-model@2.5.4":
+  version "2.5.4"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-model/-/plugin-model-2.5.4.tgz#7b91d1886195793a2a97b0b2d7994c72b7604719"
+  integrity sha512-5r4U+HpNlZ8a7dtrwhObHDbwIj6EmUecU9v9SgrcUnEFjNk375MFTvEeFgM5ZmES0LFEKSJfmolvrNiT1uNfcw==
   dependencies:
     fast-deep-equal "3.1.1"
 
@@ -2801,21 +2801,21 @@
     umi-webpack-bundle-analyzer "3.6.0"
     zlib "1.0.5"
 
-"@umijs/preset-react@^1.6.4":
-  version "1.6.4"
-  resolved "https://registry.yarnpkg.com/@umijs/preset-react/-/preset-react-1.6.4.tgz#dd34f54172cac073817e240933707f2cd7c6bc82"
-  integrity sha512-Q9EtTo2+N0WApg2Ws3Gx7t95UhdbD6qZx3YSaij7OJHW7yS9gJmhWDdkicMBoheTTNnF93zJWMG+qZ7FhwTIjA==
+"@umijs/preset-react@^1.6.7":
+  version "1.6.7"
+  resolved "https://registry.yarnpkg.com/@umijs/preset-react/-/preset-react-1.6.7.tgz#a99ca42cbed6f7f9650ca910869ec6556cfbc161"
+  integrity sha512-3EOXZ3FwK/2f/ZaWGSOxS1NpDwLNCsDuS/Cq+IYcqrJ8gbJGqEN/Dzt64jMeKu1A9s25UnSsy+8da72OCNDZvw==
   dependencies:
     "@umijs/plugin-access" "2.3.1"
     "@umijs/plugin-analytics" "0.2.2"
     "@umijs/plugin-antd" "0.8.0"
     "@umijs/plugin-crossorigin" "1.1.1"
-    "@umijs/plugin-dva" "0.8.2"
+    "@umijs/plugin-dva" "0.9.0"
     "@umijs/plugin-helmet" "1.1.1"
     "@umijs/plugin-initial-state" "2.2.1"
-    "@umijs/plugin-layout" "0.12.1"
-    "@umijs/plugin-locale" "0.10.1"
-    "@umijs/plugin-model" "2.5.3"
+    "@umijs/plugin-layout" "0.12.2"
+    "@umijs/plugin-locale" "0.10.2"
+    "@umijs/plugin-model" "2.5.4"
     "@umijs/plugin-request" "2.5.0"
     "@umijs/plugin-test" "1.0.0"
 
