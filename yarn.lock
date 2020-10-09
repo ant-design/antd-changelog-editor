@@ -2697,14 +2697,14 @@
   resolved "https://registry.npm.taobao.org/@umijs/plugin-crossorigin/download/@umijs/plugin-crossorigin-1.1.1.tgz?cache=0&sync_timestamp=1595226417352&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40umijs%2Fplugin-crossorigin%2Fdownload%2F%40umijs%2Fplugin-crossorigin-1.1.1.tgz#0e5ffb8013c95470fce79cfbd6a29a9ad58df4c9"
   integrity sha1-Dl/7gBPJVHD855z71qKamtWN9Mk=
 
-"@umijs/plugin-dva@0.8.2":
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-dva/-/plugin-dva-0.8.2.tgz#85a052d77d7520fca539415cc8c8c56432806892"
-  integrity sha512-4LhVk7AJwgzyoTjzEsMwHljsiR6+FBSakt+rNO3sI4ciYQkNWkXDXekjuw/ZQz3FXHf2uTAk4fgPsJBqq8frAw==
+"@umijs/plugin-dva@0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-dva/-/plugin-dva-0.9.1.tgz#08588b80ff9867e256368aa91923ac48c0a01602"
+  integrity sha512-ZaaZnrqFu9fRtyl7Ah8WN3RJHpJb4PM2ZH7BC0+BqMbEVOyUQkBgf4cy/ddkJ1skbKQVlHN1ZQIiaB6q1nxJww==
   dependencies:
     babel-plugin-dva-hmr "^0.4.2"
     dva "^2.6.0-beta.20"
-    dva-immer "^0.4.19"
+    dva-immer "^0.5.0"
     dva-loading "^3.0.20"
 
 "@umijs/plugin-helmet@1.1.1":
@@ -2720,20 +2720,20 @@
   resolved "https://registry.npm.taobao.org/@umijs/plugin-initial-state/download/@umijs/plugin-initial-state-2.2.1.tgz#cd7592aa90b6b369bd0df297254320088397ff67"
   integrity sha1-zXWSqpC2s2m9DfKXJUMgCIOX/2c=
 
-"@umijs/plugin-layout@0.12.1":
-  version "0.12.1"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-layout/-/plugin-layout-0.12.1.tgz#6a67f1347fe5fca2e986641ab136c186bd1aa8f9"
-  integrity sha512-ICl0WmT3FIOQJ+qGfyFPTl11dIuaUmhBme6xNniPUE43TBjYo65+o2vfnsG2qZZF6YB/MjxLYB3PZ7WuTKlLoA==
+"@umijs/plugin-layout@0.12.2":
+  version "0.12.2"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-layout/-/plugin-layout-0.12.2.tgz#729930e82a62a930950d2e466de6fa350190c1c0"
+  integrity sha512-EqdhzLS9+wS80ZpAFK04aZUCaiU3IWKfaLh2j8qWh4C0cTRtmLRBgake6suV8AHIQj3NPwohsq2s55Qt/S/sLw==
   dependencies:
     "@umijs/route-utils" "^1.0.7"
     antd "^4.1.2"
     lodash "^4.17.15"
     path-to-regexp "1.x"
 
-"@umijs/plugin-locale@0.10.1":
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-locale/-/plugin-locale-0.10.1.tgz#d9e037223062cb216c232219c7819ef800948437"
-  integrity sha512-dKGLerDGbpCTH0wCwmwNGC1EqEziMwFpkDRIjN0oBZ/YVTBwZgcs0u/3Ruf6YnBgDGJbtJ6WoleC6M4Rb6IJvQ==
+"@umijs/plugin-locale@0.10.3":
+  version "0.10.3"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-locale/-/plugin-locale-0.10.3.tgz#3ef83340b8fd7de3d097efed9d562ab24c96c8e6"
+  integrity sha512-ZqmSA+Tvd/qFGyyRBRb1mevu3/xeGwKHSjtGqPiYswWWwLBObw8N6N2bqa7JE7wMs9yICBznxOwbgbYC5zMcdg==
   dependencies:
     "@ant-design/icons" "^4.1.0"
     "@formatjs/intl-pluralrules" "^1.5.0"
@@ -2743,10 +2743,10 @@
     react-intl "3.12.0"
     warning "^4.0.3"
 
-"@umijs/plugin-model@2.5.3":
-  version "2.5.3"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-model/-/plugin-model-2.5.3.tgz#2d932daa67dee78f405b9b9e0aa2a44721305d33"
-  integrity sha512-36bxjWfm4diCkZmZMMY2hMLWCAoZ+hxsQ1g439bS6nNDL1yQz8J7Vh55R8UpTVA2Djm8zKUBjgCsmbBvYpVtMg==
+"@umijs/plugin-model@2.5.4":
+  version "2.5.4"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-model/-/plugin-model-2.5.4.tgz#7b91d1886195793a2a97b0b2d7994c72b7604719"
+  integrity sha512-5r4U+HpNlZ8a7dtrwhObHDbwIj6EmUecU9v9SgrcUnEFjNk375MFTvEeFgM5ZmES0LFEKSJfmolvrNiT1uNfcw==
   dependencies:
     fast-deep-equal "3.1.1"
 
@@ -2801,21 +2801,21 @@
     umi-webpack-bundle-analyzer "3.6.0"
     zlib "1.0.5"
 
-"@umijs/preset-react@^1.6.4":
-  version "1.6.4"
-  resolved "https://registry.yarnpkg.com/@umijs/preset-react/-/preset-react-1.6.4.tgz#dd34f54172cac073817e240933707f2cd7c6bc82"
-  integrity sha512-Q9EtTo2+N0WApg2Ws3Gx7t95UhdbD6qZx3YSaij7OJHW7yS9gJmhWDdkicMBoheTTNnF93zJWMG+qZ7FhwTIjA==
+"@umijs/preset-react@^1.6.9":
+  version "1.6.9"
+  resolved "https://registry.yarnpkg.com/@umijs/preset-react/-/preset-react-1.6.9.tgz#088f2e1b1f22db8a4700afe05b713e8489daa18e"
+  integrity sha512-OB417hrFPdcj6ZrqDZi2321hNhwKE4tzXfOfwCdgIvZe8nhx7jWbUsgDFKWMfHhy0s/TN2aS1rtOQ+KdjpnRHg==
   dependencies:
     "@umijs/plugin-access" "2.3.1"
     "@umijs/plugin-analytics" "0.2.2"
     "@umijs/plugin-antd" "0.8.0"
     "@umijs/plugin-crossorigin" "1.1.1"
-    "@umijs/plugin-dva" "0.8.2"
+    "@umijs/plugin-dva" "0.9.1"
     "@umijs/plugin-helmet" "1.1.1"
     "@umijs/plugin-initial-state" "2.2.1"
-    "@umijs/plugin-layout" "0.12.1"
-    "@umijs/plugin-locale" "0.10.1"
-    "@umijs/plugin-model" "2.5.3"
+    "@umijs/plugin-layout" "0.12.2"
+    "@umijs/plugin-locale" "0.10.3"
+    "@umijs/plugin-model" "2.5.4"
     "@umijs/plugin-request" "2.5.0"
     "@umijs/plugin-test" "1.0.0"
 
@@ -5391,13 +5391,13 @@ dva-core@2.0.2:
     redux-saga "^0.16.0"
     warning "^3.0.0"
 
-dva-immer@^0.4.19:
-  version "0.4.19"
-  resolved "https://registry.npm.taobao.org/dva-immer/download/dva-immer-0.4.19.tgz#aabb52bcf69cea26f1a08a9c5b0670486e063011"
-  integrity sha1-qrtSvPac6ibxoIqcWwZwSG4GMBE=
+dva-immer@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/dva-immer/-/dva-immer-0.5.0.tgz#cc949b20aae266f0a1ab76385ae567dd14a16ffa"
+  integrity sha512-pyKL35pxO6xXYzMtkXc9z4F2BmMbx6dyoEQxuXcxAVoOJMRTjt04RVoCxv/uwuYs8CBVdsj73P7gGCzV5i5cRg==
   dependencies:
     "@babel/runtime" "^7.0.0"
-    immer "^2.1.1"
+    immer "^7.0.5"
 
 dva-loading@^3.0.20:
   version "3.0.20"
@@ -6936,10 +6936,10 @@ immer@7.0.5:
   resolved "https://registry.npm.taobao.org/immer/download/immer-7.0.5.tgz?cache=0&sync_timestamp=1595826464561&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fimmer%2Fdownload%2Fimmer-7.0.5.tgz#8af347db5b60b40af8ae7baf1784ea4d35b5208e"
   integrity sha1-ivNH21tgtAr4rnuvF4TqTTW1II4=
 
-immer@^2.1.1:
-  version "2.1.5"
-  resolved "https://registry.npm.taobao.org/immer/download/immer-2.1.5.tgz?cache=0&sync_timestamp=1595826464561&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fimmer%2Fdownload%2Fimmer-2.1.5.tgz#0389947455c5a2c7a47f1e6f415c9d1a62a1ebed"
-  integrity sha1-A4mUdFXFosekfx5vQVydGmKh6+0=
+immer@^7.0.5:
+  version "7.0.9"
+  resolved "https://registry.yarnpkg.com/immer/-/immer-7.0.9.tgz#28e7552c21d39dd76feccd2b800b7bc86ee4a62e"
+  integrity sha512-Vs/gxoM4DqNAYR7pugIxi0Xc8XAun/uy7AQu4fLLqaTBHxjOP9pJ266Q9MWA/ly4z6rAFZbvViOtihxUZ7O28A==
 
 immutable@^3.8.1:
   version "3.8.2"
