@@ -1356,10 +1356,10 @@
   dependencies:
     "@formatjs/intl-utils" "^2.3.0"
 
-"@formatjs/intl-listformat@^1.3.7":
+"@formatjs/intl-listformat@^1.4.1":
   version "1.4.8"
-  resolved "https://registry.npm.taobao.org/@formatjs/intl-listformat/download/@formatjs/intl-listformat-1.4.8.tgz#70b81005e7dcf74329cb5b314a940ce5fce36cd0"
-  integrity sha1-cLgQBefc90Mpy1sxSpQM5fzjbNA=
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-listformat/-/intl-listformat-1.4.8.tgz#70b81005e7dcf74329cb5b314a940ce5fce36cd0"
+  integrity sha512-WNMQlEg0e50VZrGIkgD5n7+DAMGt3boKi1GJALfhFMymslJb5i+5WzWxyj/3a929Z6MAFsmzRIJjKuv+BxKAOQ==
   dependencies:
     "@formatjs/intl-utils" "^2.3.0"
 
@@ -1370,29 +1370,24 @@
   dependencies:
     "@formatjs/intl-utils" "^2.3.0"
 
-"@formatjs/intl-relativetimeformat@^4.5.7":
+"@formatjs/intl-relativetimeformat@^4.5.7", "@formatjs/intl-relativetimeformat@^4.5.9":
   version "4.5.16"
   resolved "https://registry.npm.taobao.org/@formatjs/intl-relativetimeformat/download/@formatjs/intl-relativetimeformat-4.5.16.tgz?cache=0&sync_timestamp=1595679887261&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40formatjs%2Fintl-relativetimeformat%2Fdownload%2F%40formatjs%2Fintl-relativetimeformat-4.5.16.tgz#7449cef3213dd66d25924ca41f125f87b58df95a"
   integrity sha1-dEnO8yE91m0lkkykHxJfh7WN+Vo=
   dependencies:
     "@formatjs/intl-utils" "^2.3.0"
 
-"@formatjs/intl-unified-numberformat@^3.0.4", "@formatjs/intl-unified-numberformat@^3.2.0":
+"@formatjs/intl-unified-numberformat@^3.2.0":
   version "3.3.7"
   resolved "https://registry.npm.taobao.org/@formatjs/intl-unified-numberformat/download/@formatjs/intl-unified-numberformat-3.3.7.tgz#9995a24568908188e716d81a1de5b702b2ee00e2"
   integrity sha1-mZWiRWiQgYjnFtgaHeW3ArLuAOI=
   dependencies:
     "@formatjs/intl-utils" "^2.3.0"
 
-"@formatjs/intl-utils@^2.0.4", "@formatjs/intl-utils@^2.3.0":
+"@formatjs/intl-utils@^2.2.0", "@formatjs/intl-utils@^2.3.0":
   version "2.3.0"
   resolved "https://registry.npm.taobao.org/@formatjs/intl-utils/download/@formatjs/intl-utils-2.3.0.tgz?cache=0&sync_timestamp=1595679431976&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40formatjs%2Fintl-utils%2Fdownload%2F%40formatjs%2Fintl-utils-2.3.0.tgz#2dc8c57044de0340eb53a7ba602e59abf80dc799"
   integrity sha1-LcjFcETeA0DrU6e6YC5Zq/gNx5k=
-
-"@formatjs/macro@^0.2.6":
-  version "0.2.8"
-  resolved "https://registry.npm.taobao.org/@formatjs/macro/download/@formatjs/macro-0.2.8.tgz#e43228e02d0159817734ad80cc0326cfefaeeb6c"
-  integrity sha1-5DIo4C0BWYF3NK2AzAMmz++u62w=
 
 "@hapi/address@^2.1.2":
   version "2.1.4"
@@ -2674,37 +2669,37 @@
   resolved "https://registry.npm.taobao.org/@umijs/error-code-map/download/@umijs/error-code-map-1.0.1.tgz#2a2dd7b4bcd11869e968264ff3dabacfabe8b874"
   integrity sha1-Ki3XtLzRGGnpaCZP89q6z6vouHQ=
 
-"@umijs/plugin-access@2.3.1":
-  version "2.3.1"
-  resolved "https://registry.npm.taobao.org/@umijs/plugin-access/download/@umijs/plugin-access-2.3.1.tgz#016a1cae8583b878cbebb3ea6b07235a56f2c756"
-  integrity sha1-AWocroWDuHjL67PqawcjWlbyx1Y=
+"@umijs/plugin-access@2.3.2":
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-access/-/plugin-access-2.3.2.tgz#2d736e72bf27c69c7a0d1d1d1ac334a408e069c0"
+  integrity sha512-X6tgpnhoEx9F2dVv95Q40pWZBSSH7ltcHFe2tNn7O+zQwzCUIeYWz5wk2olodKjxL9VWYNtubSwJ9DaVYkApgQ==
 
 "@umijs/plugin-analytics@0.2.2":
   version "0.2.2"
   resolved "https://registry.npm.taobao.org/@umijs/plugin-analytics/download/@umijs/plugin-analytics-0.2.2.tgz#575fd231d4327ea13413217aa1b5fc6bdd89465e"
   integrity sha1-V1/SMdQyfqE0EyF6obX8a92JRl4=
 
-"@umijs/plugin-antd@0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-antd/-/plugin-antd-0.8.0.tgz#0dae96f2aada81dbd494ee19f9329f1a63cff1ff"
-  integrity sha512-Pz9DOd6kwYvAQUGbKfyVnezCROGLLQzwfi6QFvMnsCh1iV2g1Kfk0tg3hEbzsUkXHPgeMLx+qj7KQFwHWWM1+w==
+"@umijs/plugin-antd@0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-antd/-/plugin-antd-0.9.0.tgz#9e62bd8fad1e8f42a88ba74ae3c07f9642dcb74b"
+  integrity sha512-wDEHrJ5Vqxtrh0P1i4hu5EU9UUQgL2O4o53Y7ev09NnIqbDUlOTxIMPhZSWjdXv4K4agrcJrg49DDXFjYLvNDg==
   dependencies:
     antd "^4.1.3"
     antd-mobile "^2.3.1"
 
-"@umijs/plugin-crossorigin@1.1.1":
-  version "1.1.1"
-  resolved "https://registry.npm.taobao.org/@umijs/plugin-crossorigin/download/@umijs/plugin-crossorigin-1.1.1.tgz?cache=0&sync_timestamp=1595226417352&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40umijs%2Fplugin-crossorigin%2Fdownload%2F%40umijs%2Fplugin-crossorigin-1.1.1.tgz#0e5ffb8013c95470fce79cfbd6a29a9ad58df4c9"
-  integrity sha1-Dl/7gBPJVHD855z71qKamtWN9Mk=
+"@umijs/plugin-crossorigin@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-crossorigin/-/plugin-crossorigin-1.2.0.tgz#bf9ec0ccd76cf04e178c63fda813b06e93280131"
+  integrity sha512-/3y8PELpL/mNo6tBeegXVZwn75lG/8Z9FN6L1huKm3UQFQUjhKeJy8Sw8p3IkwXjwSYyE5gjuSB3Bb6NZlLDUQ==
 
-"@umijs/plugin-dva@0.8.2":
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-dva/-/plugin-dva-0.8.2.tgz#85a052d77d7520fca539415cc8c8c56432806892"
-  integrity sha512-4LhVk7AJwgzyoTjzEsMwHljsiR6+FBSakt+rNO3sI4ciYQkNWkXDXekjuw/ZQz3FXHf2uTAk4fgPsJBqq8frAw==
+"@umijs/plugin-dva@0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-dva/-/plugin-dva-0.9.1.tgz#08588b80ff9867e256368aa91923ac48c0a01602"
+  integrity sha512-ZaaZnrqFu9fRtyl7Ah8WN3RJHpJb4PM2ZH7BC0+BqMbEVOyUQkBgf4cy/ddkJ1skbKQVlHN1ZQIiaB6q1nxJww==
   dependencies:
     babel-plugin-dva-hmr "^0.4.2"
     dva "^2.6.0-beta.20"
-    dva-immer "^0.4.19"
+    dva-immer "^0.5.0"
     dva-loading "^3.0.20"
 
 "@umijs/plugin-helmet@1.1.1":
@@ -2715,38 +2710,38 @@
     "@types/react-helmet" "^6.1.0"
     react-helmet "^6.1.0"
 
-"@umijs/plugin-initial-state@2.2.1":
-  version "2.2.1"
-  resolved "https://registry.npm.taobao.org/@umijs/plugin-initial-state/download/@umijs/plugin-initial-state-2.2.1.tgz#cd7592aa90b6b369bd0df297254320088397ff67"
-  integrity sha1-zXWSqpC2s2m9DfKXJUMgCIOX/2c=
+"@umijs/plugin-initial-state@2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-initial-state/-/plugin-initial-state-2.3.0.tgz#b0afc6cf8446bddb0ed2c2fa4271c4cff993d688"
+  integrity sha512-R1hhzwFX3GA+kP0sjci2DwfLStCeOCdE0EjOV4HgzBkWR1YhX4ytof+eTgJlwx7o27zRqGNfk4DZVO3wmYpc0w==
 
-"@umijs/plugin-layout@0.12.1":
-  version "0.12.1"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-layout/-/plugin-layout-0.12.1.tgz#6a67f1347fe5fca2e986641ab136c186bd1aa8f9"
-  integrity sha512-ICl0WmT3FIOQJ+qGfyFPTl11dIuaUmhBme6xNniPUE43TBjYo65+o2vfnsG2qZZF6YB/MjxLYB3PZ7WuTKlLoA==
+"@umijs/plugin-layout@0.13.2":
+  version "0.13.2"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-layout/-/plugin-layout-0.13.2.tgz#73c6f47cb88a76822db6b4a43424e36999074952"
+  integrity sha512-U8vq9FFFmXWLytPHJzrrToyw2K1OzYKl54ECNu3s5YmE6u6PZ2LLMYcz00revX+LpxYAnydJ+uaVowhznSB1LA==
   dependencies:
     "@umijs/route-utils" "^1.0.7"
     antd "^4.1.2"
     lodash "^4.17.15"
     path-to-regexp "1.x"
 
-"@umijs/plugin-locale@0.10.1":
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-locale/-/plugin-locale-0.10.1.tgz#d9e037223062cb216c232219c7819ef800948437"
-  integrity sha512-dKGLerDGbpCTH0wCwmwNGC1EqEziMwFpkDRIjN0oBZ/YVTBwZgcs0u/3Ruf6YnBgDGJbtJ6WoleC6M4Rb6IJvQ==
+"@umijs/plugin-locale@0.10.4":
+  version "0.10.4"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-locale/-/plugin-locale-0.10.4.tgz#b5842f42c39a3828520d9c2edabd8da2a678969d"
+  integrity sha512-azn3Edzty0lQFCcmXse5OGpb9vq+p+Jms4OlaKKKKH0iiKybKfxgJ+EJCXMjlx6l0tc7gkUnbUa3dBPDh7K2tQ==
   dependencies:
     "@ant-design/icons" "^4.1.0"
     "@formatjs/intl-pluralrules" "^1.5.0"
     "@formatjs/intl-relativetimeformat" "^4.5.7"
     intl "1.2.5"
-    moment "2.x"
-    react-intl "3.12.0"
+    moment "^2.29.1"
+    react-intl "3.12.1"
     warning "^4.0.3"
 
-"@umijs/plugin-model@2.5.3":
-  version "2.5.3"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-model/-/plugin-model-2.5.3.tgz#2d932daa67dee78f405b9b9e0aa2a44721305d33"
-  integrity sha512-36bxjWfm4diCkZmZMMY2hMLWCAoZ+hxsQ1g439bS6nNDL1yQz8J7Vh55R8UpTVA2Djm8zKUBjgCsmbBvYpVtMg==
+"@umijs/plugin-model@2.5.6":
+  version "2.5.6"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-model/-/plugin-model-2.5.6.tgz#1eec24000d608375d0790fb6713a50d7ee7b5153"
+  integrity sha512-ErZk1/7pc687pQM26wN96eAH9hhzkBeeTtPShMX9HgQudtTwWX1LRjlMUjtn2+H6ADbfLipkZ9FuXn1pPLpUAA==
   dependencies:
     fast-deep-equal "3.1.1"
 
@@ -2801,21 +2796,21 @@
     umi-webpack-bundle-analyzer "3.6.0"
     zlib "1.0.5"
 
-"@umijs/preset-react@^1.6.4":
-  version "1.6.4"
-  resolved "https://registry.yarnpkg.com/@umijs/preset-react/-/preset-react-1.6.4.tgz#dd34f54172cac073817e240933707f2cd7c6bc82"
-  integrity sha512-Q9EtTo2+N0WApg2Ws3Gx7t95UhdbD6qZx3YSaij7OJHW7yS9gJmhWDdkicMBoheTTNnF93zJWMG+qZ7FhwTIjA==
+"@umijs/preset-react@^1.7.3":
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/@umijs/preset-react/-/preset-react-1.7.3.tgz#c69c2c3d944eea78a09b4118772da681bee7adfe"
+  integrity sha512-OKWFwN4qXMtB9wlPPx9qftRLOTK1SdojgvlTIMjAtYmmcuWjOdSkLOZ5QXVJ7XZZSRzDE7bNflWdzzbOYImFGg==
   dependencies:
-    "@umijs/plugin-access" "2.3.1"
+    "@umijs/plugin-access" "2.3.2"
     "@umijs/plugin-analytics" "0.2.2"
-    "@umijs/plugin-antd" "0.8.0"
-    "@umijs/plugin-crossorigin" "1.1.1"
-    "@umijs/plugin-dva" "0.8.2"
+    "@umijs/plugin-antd" "0.9.0"
+    "@umijs/plugin-crossorigin" "1.2.0"
+    "@umijs/plugin-dva" "0.9.1"
     "@umijs/plugin-helmet" "1.1.1"
-    "@umijs/plugin-initial-state" "2.2.1"
-    "@umijs/plugin-layout" "0.12.1"
-    "@umijs/plugin-locale" "0.10.1"
-    "@umijs/plugin-model" "2.5.3"
+    "@umijs/plugin-initial-state" "2.3.0"
+    "@umijs/plugin-layout" "0.13.2"
+    "@umijs/plugin-locale" "0.10.4"
+    "@umijs/plugin-model" "2.5.6"
     "@umijs/plugin-request" "2.5.0"
     "@umijs/plugin-test" "1.0.0"
 
@@ -5391,13 +5386,13 @@ dva-core@2.0.2:
     redux-saga "^0.16.0"
     warning "^3.0.0"
 
-dva-immer@^0.4.19:
-  version "0.4.19"
-  resolved "https://registry.npm.taobao.org/dva-immer/download/dva-immer-0.4.19.tgz#aabb52bcf69cea26f1a08a9c5b0670486e063011"
-  integrity sha1-qrtSvPac6ibxoIqcWwZwSG4GMBE=
+dva-immer@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/dva-immer/-/dva-immer-0.5.0.tgz#cc949b20aae266f0a1ab76385ae567dd14a16ffa"
+  integrity sha512-pyKL35pxO6xXYzMtkXc9z4F2BmMbx6dyoEQxuXcxAVoOJMRTjt04RVoCxv/uwuYs8CBVdsj73P7gGCzV5i5cRg==
   dependencies:
     "@babel/runtime" "^7.0.0"
-    immer "^2.1.1"
+    immer "^7.0.5"
 
 dva-loading@^3.0.20:
   version "3.0.20"
@@ -6720,7 +6715,7 @@ hmac-drbg@^1.0.0:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.1"
 
-hoist-non-react-statics@^3.1.0, hoist-non-react-statics@^3.3.0, hoist-non-react-statics@^3.3.1, hoist-non-react-statics@^3.3.2:
+hoist-non-react-statics@^3.1.0, hoist-non-react-statics@^3.3.0, hoist-non-react-statics@^3.3.2:
   version "3.3.2"
   resolved "https://registry.npm.taobao.org/hoist-non-react-statics/download/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
   integrity sha1-7OCsr3HWLClpwuxZ/v9CpLGoW0U=
@@ -6936,10 +6931,10 @@ immer@7.0.5:
   resolved "https://registry.npm.taobao.org/immer/download/immer-7.0.5.tgz?cache=0&sync_timestamp=1595826464561&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fimmer%2Fdownload%2Fimmer-7.0.5.tgz#8af347db5b60b40af8ae7baf1784ea4d35b5208e"
   integrity sha1-ivNH21tgtAr4rnuvF4TqTTW1II4=
 
-immer@^2.1.1:
-  version "2.1.5"
-  resolved "https://registry.npm.taobao.org/immer/download/immer-2.1.5.tgz?cache=0&sync_timestamp=1595826464561&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fimmer%2Fdownload%2Fimmer-2.1.5.tgz#0389947455c5a2c7a47f1e6f415c9d1a62a1ebed"
-  integrity sha1-A4mUdFXFosekfx5vQVydGmKh6+0=
+immer@^7.0.5:
+  version "7.0.15"
+  resolved "https://registry.yarnpkg.com/immer/-/immer-7.0.15.tgz#dc3bc6db87401659d2e737c67a21b227c484a4ad"
+  integrity sha512-yM7jo9+hvYgvdCQdqvhCNRRio0SCXc8xDPzA25SvKWa7b1WVPjLwQs1VYU5JPXjcJPTqAa5NP5dqpORGYBQ2AA==
 
 immutable@^3.8.1:
   version "3.8.2"
@@ -7041,27 +7036,22 @@ internal-slot@^1.0.2:
     has "^1.0.3"
     side-channel "^1.0.2"
 
-intl-format-cache@^4.2.19, intl-format-cache@^4.2.21:
+intl-format-cache@^4.2.21:
   version "4.3.1"
   resolved "https://registry.npm.taobao.org/intl-format-cache/download/intl-format-cache-4.3.1.tgz?cache=0&sync_timestamp=1595679517633&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fintl-format-cache%2Fdownload%2Fintl-format-cache-4.3.1.tgz#484d31a9872161e6c02139349b259a6229ade377"
   integrity sha1-SE0xqYchYebAITk0myWaYimt43c=
 
-intl-locales-supported@^1.8.4:
-  version "1.8.12"
-  resolved "https://registry.npm.taobao.org/intl-locales-supported/download/intl-locales-supported-1.8.12.tgz#bbd83475a1cda61dc026309ca61f64c450af8ccb"
-  integrity sha1-u9g0daHNph3AJjCcph9kxFCvjMs=
-
-intl-messageformat-parser@^3.6.2, intl-messageformat-parser@^3.6.4:
+intl-messageformat-parser@^3.6.4:
   version "3.6.4"
   resolved "https://registry.npm.taobao.org/intl-messageformat-parser/download/intl-messageformat-parser-3.6.4.tgz?cache=0&sync_timestamp=1595679421872&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fintl-messageformat-parser%2Fdownload%2Fintl-messageformat-parser-3.6.4.tgz#5199d106d816c3dda26ee0694362a9cf823978fb"
   integrity sha1-UZnRBtgWw92ibuBpQ2Kpz4I5ePs=
   dependencies:
     "@formatjs/intl-unified-numberformat" "^3.2.0"
 
-intl-messageformat@^7.8.2:
+intl-messageformat@^7.8.4:
   version "7.8.4"
-  resolved "https://registry.npm.taobao.org/intl-messageformat/download/intl-messageformat-7.8.4.tgz?cache=0&sync_timestamp=1596088423991&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fintl-messageformat%2Fdownload%2Fintl-messageformat-7.8.4.tgz#c29146a06b9cd26662978a4d95fff2b133e3642f"
-  integrity sha1-wpFGoGuc0mZil4pNlf/ysTPjZC8=
+  resolved "https://registry.yarnpkg.com/intl-messageformat/-/intl-messageformat-7.8.4.tgz#c29146a06b9cd26662978a4d95fff2b133e3642f"
+  integrity sha512-yS0cLESCKCYjseCOGXuV4pxJm/buTfyCJ1nzQjryHmSehlptbZbn9fnlk1I9peLopZGGbjj46yHHiTAEZ1qOTA==
   dependencies:
     intl-format-cache "^4.2.21"
     intl-messageformat-parser "^3.6.4"
@@ -8830,10 +8820,15 @@ mkdirp@^0.5.1, mkdirp@^0.5.3, mkdirp@^0.5.5, mkdirp@~0.5.1:
   dependencies:
     minimist "^1.2.5"
 
-moment@2.x, moment@^2.24.0, moment@^2.25.3:
+moment@^2.24.0, moment@^2.25.3:
   version "2.27.0"
   resolved "https://registry.npm.taobao.org/moment/download/moment-2.27.0.tgz#8bff4e3e26a236220dfe3e36de756b6ebaa0105d"
   integrity sha1-i/9OPiaiNiIN/j423nVrbrqgEF0=
+
+moment@^2.29.1:
+  version "2.29.1"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.1.tgz#b2be769fa31940be9eeea6469c075e35006fa3d3"
+  integrity sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==
 
 move-concurrently@^1.0.1:
   version "1.0.1"
@@ -11041,24 +11036,22 @@ react-helmet@^6.1.0:
     react-fast-compare "^3.1.1"
     react-side-effect "^2.1.0"
 
-react-intl@3.12.0:
-  version "3.12.0"
-  resolved "https://registry.npm.taobao.org/react-intl/download/react-intl-3.12.0.tgz#98ef1c94434cc25a8c67448e1e283e6bfe11b2fc"
-  integrity sha1-mO8clENMwlqMZ0SOHig+a/4Rsvw=
+react-intl@3.12.1:
+  version "3.12.1"
+  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-3.12.1.tgz#e9a783ea20302e9da25e4eda59e5593a43d2ec80"
+  integrity sha512-cgumW29mwROIqyp8NXStYsoIm27+8FqnxykiLSawWjOxGIBeLuN/+p2srei5SRIumcJefOkOIHP+NDck05RgHg==
   dependencies:
     "@formatjs/intl-displaynames" "^1.2.0"
-    "@formatjs/intl-listformat" "^1.3.7"
-    "@formatjs/intl-relativetimeformat" "^4.5.7"
-    "@formatjs/intl-unified-numberformat" "^3.0.4"
-    "@formatjs/intl-utils" "^2.0.4"
-    "@formatjs/macro" "^0.2.6"
+    "@formatjs/intl-listformat" "^1.4.1"
+    "@formatjs/intl-relativetimeformat" "^4.5.9"
+    "@formatjs/intl-unified-numberformat" "^3.2.0"
+    "@formatjs/intl-utils" "^2.2.0"
     "@types/hoist-non-react-statics" "^3.3.1"
     "@types/invariant" "^2.2.31"
-    hoist-non-react-statics "^3.3.1"
-    intl-format-cache "^4.2.19"
-    intl-locales-supported "^1.8.4"
-    intl-messageformat "^7.8.2"
-    intl-messageformat-parser "^3.6.2"
+    hoist-non-react-statics "^3.3.2"
+    intl-format-cache "^4.2.21"
+    intl-messageformat "^7.8.4"
+    intl-messageformat-parser "^3.6.4"
     shallow-equal "^1.2.1"
 
 react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.6, react-is@^16.9.0:
