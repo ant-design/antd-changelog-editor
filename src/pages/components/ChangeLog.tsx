@@ -94,10 +94,14 @@ export default function ChangeLog({ hashList, formValues, lang }: ChangeLogProps
       }
 
       if (entity.pr) {
-        content += `[#${entity.pr}](https://github.com/ant-design/ant-design/pull/${entity.pr})`;
+        content += `[#${entity.pr}](${
+          (window as any).gitRemoteUrl || 'https://github.com/ant-design/ant-design'
+        }/pull/${entity.pr})`;
       } else {
         const showHash = hash.slice(0, 7);
-        content += `[${showHash}](https://github.com/ant-design/ant-design/commit/${showHash})`;
+        content += `[${showHash}](${
+          (window as any).gitRemoteUrl || 'https://github.com/ant-design/ant-design'
+        }/commit/${showHash})`;
       }
 
       if (entity.author && !MAINTAINERS.includes(entity.author.toLowerCase())) {

@@ -29,7 +29,9 @@ export default function () {
               <Input placeholder="NO PR" />
             </Form.Item>
             <a
-              href={`https://github.com/ant-design/ant-design/commit/${value}`}
+              href={`${
+                (window as any).gitRemoteUrl || 'https://github.com/ant-design/ant-design'
+              }/commit/${value}`}
               target="_blank"
               rel="noopener noreferrer"
             >
