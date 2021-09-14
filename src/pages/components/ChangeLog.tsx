@@ -105,7 +105,9 @@ export default function ChangeLog({ hashList, formValues, lang }: ChangeLogProps
       }
 
       if (entity.author && !MAINTAINERS.includes(entity.author.toLowerCase())) {
-        content += ` [@${entity.author}](https://github.com/${entity.author})`;
+        content += ` [@${entity.author}](${
+          (window as any).gitRemoteUrl.match(/http(s):\/\/[\w.]+/)[0]
+        }/${entity.author})`;
       }
 
       switch (entity.type) {

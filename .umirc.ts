@@ -10,8 +10,7 @@ const config = defineConfig({
     },
   ],
   antd: {},
-  title: 'Ant Design CHANGELOG Generator',
-  favicon: 'https://gw.alipayobjects.com/zos/rmsportal/rlpTLlbMzTNYuZGGCVYM.png',
+  title: 'CHANGELOG Generator',
 });
 
 export default config;

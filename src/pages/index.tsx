@@ -3,6 +3,8 @@ import { Table, Input, Form, Select, Checkbox, Typography, Divider, Avatar, Layo
 import ChangeLog from './components/ChangeLog';
 import styles from './index.css';
 
+// import './test.js';
+
 export default function () {
   const [dataSource, setDataSource] = React.useState([]);
 
