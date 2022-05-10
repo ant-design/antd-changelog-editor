@@ -5,7 +5,7 @@ import styles from './index.css';
 
 export default function () {
   const [dataSource, setDataSource] = React.useState([]);
-
+  const [repo, setRepo] = React.useState('');
   const columns = [
     {
       align: 'center',
@@ -29,7 +29,7 @@ export default function () {
               <Input placeholder="NO PR" />
             </Form.Item>
             <a
-              href={`https://github.com/ant-design/ant-design/commit/${value}`}
+              href={`https://github.com/${repo}/commit/${value}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -116,7 +116,9 @@ export default function () {
 
   React.useEffect(() => {
     const changelog = (window as any).changelog || [];
+    const repo = (window as any).repo || 'ant-design/ant-design';
     setDataSource(changelog);
+    setRepo(repo);
 
     const formValues: Record<string, any> = {};
     changelog.forEach(
@@ -203,9 +205,9 @@ export default function () {
                 return (
                   <>
                     <Divider>🇨🇳 中文日志 🇨🇳</Divider>
-                    <ChangeLog hashList={hashList} formValues={formValues} lang="chinese" />
+                    <ChangeLog hashList={hashList} formValues={formValues} lang="chinese" repo={repo} />
                     <Divider>🇺🇸 English Changelog 🇺🇸</Divider>
-                    <ChangeLog hashList={hashList} formValues={formValues} lang="english" />
+                    <ChangeLog hashList={hashList} formValues={formValues} lang="english" repo={repo} />
                   </>
                 );
               }}
