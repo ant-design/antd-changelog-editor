@@ -20,6 +20,7 @@ const MAINTAINERS = [
 export interface ChangeLogProps {
   hashList: string[];
   lang: 'chinese' | 'english';
+  repo: string;
   formValues: Record<
     string,
     {
@@ -70,7 +71,7 @@ function getIcon(type: string) {
   }
 }
 
-export default function ChangeLog({ hashList, formValues, lang }: ChangeLogProps) {
+export default function ChangeLog({ hashList, formValues, lang, repo }: ChangeLogProps) {
   const lines: string[] = [];
   const rtlLines: string[] = [];
   const tsLines: string[] = [];
@@ -94,10 +95,10 @@ export default function ChangeLog({ hashList, formValues, lang }: ChangeLogProps
       }
 
       if (entity.pr) {
-        content += `[#${entity.pr}](https://github.com/ant-design/ant-design/pull/${entity.pr})`;
+        content += `[#${entity.pr}](https://github.com/${repo}/pull/${entity.pr})`;
       } else {
         const showHash = hash.slice(0, 7);
-        content += `[${showHash}](https://github.com/ant-design/ant-design/commit/${showHash})`;
+        content += `[${showHash}](https://github.com/${repo}/commit/${showHash})`;
       }
 
       if (entity.author && !MAINTAINERS.includes(entity.author.toLowerCase())) {
