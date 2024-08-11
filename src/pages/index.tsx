@@ -114,6 +114,8 @@ export default function () {
 
   const [form] = Form.useForm();
 
+  const items = Form.useWatch((values) => values, form);
+
   React.useEffect(() => {
     const changelog = (window as any).changelog || [];
     setDataSource(changelog);
@@ -143,7 +145,6 @@ export default function () {
         } else if (
           english.includes('style') ||
           chinese.includes('样式') ||
-          title.includes('sttyle') ||
           title.includes('💄')
         ) {
           values.type = 'style';
@@ -186,6 +187,10 @@ export default function () {
               tableLayout="fixed"
               columns={columns as any}
               rowKey="hash"
+              rowClassName={(record) => {
+                const selectedKeys = Object.entries(items).map(([key, { use }]) => use ? key : undefined).filter(Boolean);
+                return selectedKeys.includes(record.hash) ? '' : styles.unselected;
+              }}
               dataSource={dataSource}
               pagination={false}
               size="small"
@@ -202,9 +207,9 @@ export default function () {
                 const hashList = dataSource.map((item: { hash: string }) => item.hash);
                 return (
                   <>
-                    <Divider>🇨🇳 中文日志 🇨🇳</Divider>
+                    <Divider orientation="left">🇨🇳 中文日志</Divider>
                     <ChangeLog hashList={hashList} formValues={formValues} lang="chinese" />
-                    <Divider>🇺🇸 English Changelog 🇺🇸</Divider>
+                    <Divider orientation="left">🇬🇧 English Changelog</Divider>
                     <ChangeLog hashList={hashList} formValues={formValues} lang="english" />
                   </>
                 );

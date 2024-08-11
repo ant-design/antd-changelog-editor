@@ -2,20 +2,20 @@ import React from 'react';
 
 // https://github.com/orgs/ant-design/teams/ant-design-collaborators/members
 const MAINTAINERS = [
-  'zombiej',
-  'afc163',
-  'chenshuai2144',
-  'shaodahong',
-  'xrkffgg',
-  'AshoneA',
-  'yesmeck',
-  'bang88',
-  'yoyo837',
-  'hengkx',
-  'Rustin-Liu',
-  'fireairforce',
-  'Kermit-Xuan',
-].map((author) => author.toLowerCase());
+  // 'zombiej',
+  // 'afc163',
+  // 'chenshuai2144',
+  // 'shaodahong',
+  // 'xrkffgg',
+  // 'AshoneA',
+  // 'yesmeck',
+  // 'bang88',
+  // 'yoyo837',
+  // 'hengkx',
+  // 'Rustin-Liu',
+  // 'fireairforce',
+  // 'Kermit-Xuan',
+].map((author: string) => author.toLowerCase());
 
 export interface ChangeLogProps {
   hashList: string[];
@@ -138,7 +138,7 @@ export default function ChangeLog({ hashList, formValues, lang }: ChangeLogProps
         background: '#fafafa',
         textAlign: 'left',
         padding: 16,
-        borderRadius: 2,
+        borderRadius: 8,
         whiteSpace: 'pre-wrap',
         margin: 0,
       }}
